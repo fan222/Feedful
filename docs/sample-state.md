@@ -14,7 +14,8 @@
           id: 1,
           title: "articleName",
           summary: "articleSummary",
-          author: "authorname"
+          author: "authorname",
+          image: "image"
         }
       }
     }
@@ -37,7 +38,8 @@
     title: "articleName",
     url: "article_url",
     author: "authorname",
-    content: "content"
+    content: "content",
+    image: "image",
   }
 }
 ```
