@@ -9,6 +9,7 @@
       id: 1,
       name: "feed 1",
       url: "feed1_url",
+      category: "category1", 
       articles: {
         1: {
           id: 1,
