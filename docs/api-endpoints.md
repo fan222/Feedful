@@ -6,11 +6,9 @@
 - `GET /` - load react web app
 
 ### Users
-- `GET /users/new`
 - `POST /users`
 
 ### Session
-- `GET /session/new`
 - `DELETE /session`
 - `GET /session`
 

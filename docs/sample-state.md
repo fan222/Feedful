@@ -1,15 +1,18 @@
 ```js
 {
-  currentUser: {
+  session: {
+    currentUser: {
     id: 1,
     username: "user1"
-  },
+    },
+    errors: []
+  }
   feeds: {
     1: {
       id: 1,
       name: "feed 1",
       url: "feed1_url",
-      category: "category1", 
+      category: "category1",
       articles: {
         1: {
           id: 1,
@@ -25,13 +28,7 @@
     1: {
       id: 1,
       name: "collection1",
-      feeds: {
-        1: {
-          id: 23,
-          name: "feed23",
-          url: "feed23_url"
-        }
-      }
+      feeds_id: [1,2,3]
     }
   },
   article: {

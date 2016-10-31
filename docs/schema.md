@@ -17,7 +17,7 @@ column name     | data type | details
 ----------------|-----------|-----------------------
 id              | integer   | not null, primary key
 name            | string    | not null
-User_id         | integer   | not null, index
+user_id         | integer   | not null, index
 
 ### Associations:
   * belongs_to: user
