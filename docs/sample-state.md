@@ -33,11 +33,8 @@
   },
   article: {
     id: 1,
-    title: "articleName",
     url: "article_url",
-    author: "authorname",
     content: "content",
-    image: "image",
   }
 }
 ```
