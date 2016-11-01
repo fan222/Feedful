@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :integer          not null, primary key
+#  username        :string           not null
+#  password_digest :string           not null
+#  session_token   :string           not null
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
 class User < ActiveRecord::Base
 
 	attr_reader :password
@@ -9,7 +21,10 @@ class User < ActiveRecord::Base
 	after_initialize :ensure_session_token
 	before_validation :ensure_session_token_uniqueness
 
-	has_many :favorites
+	has_many :collections,
+	has_many :feeds, through: :collections, source: :feeds
+	has_many :articles, through: :feeds, source: :articles
+
 
 	def password= password
 		self.password_digest = BCrypt::Password.create(password)
