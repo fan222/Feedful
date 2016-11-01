@@ -62,7 +62,7 @@ column name     | data type | details
 ----------------|-----------|-----------------------
 id              | integer   | not null, primary key
 title           | string    | not null
-author          ! string    |
+author          | string    |
 feed_id         | integer   | not null, index
 published       | string    |
 image           | string    |

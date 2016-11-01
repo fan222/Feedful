@@ -1,0 +1,2 @@
+class CollectionFeed < ApplicationRecord
+end

@@ -10,10 +10,64 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161101182258) do
+ActiveRecord::Schema.define(version: 20161101211921) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "articles", force: :cascade do |t|
+    t.string   "title",      null: false
+    t.string   "author"
+    t.integer  "feed_id",    null: false
+    t.string   "published"
+    t.string   "image"
+    t.string   "summary"
+    t.string   "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["feed_id"], name: "index_articles_on_feed_id", using: :btree
+  end
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "name",       null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "category_feeds", force: :cascade do |t|
+    t.integer  "feed_id",     null: false
+    t.integer  "category_id", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["category_id"], name: "index_category_feeds_on_category_id", using: :btree
+    t.index ["feed_id", "category_id"], name: "index_category_feeds_on_feed_id_and_category_id", unique: true, using: :btree
+    t.index ["feed_id"], name: "index_category_feeds_on_feed_id", using: :btree
+  end
+
+  create_table "collection_feeds", force: :cascade do |t|
+    t.integer  "feed_id",       null: false
+    t.integer  "collection_id", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.index ["collection_id"], name: "index_collection_feeds_on_collection_id", using: :btree
+    t.index ["feed_id", "collection_id"], name: "index_collection_feeds_on_feed_id_and_collection_id", unique: true, using: :btree
+    t.index ["feed_id"], name: "index_collection_feeds_on_feed_id", using: :btree
+  end
+
+  create_table "collections", force: :cascade do |t|
+    t.string   "name",       null: false
+    t.integer  "user_id",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_collections_on_user_id", using: :btree
+  end
+
+  create_table "feeds", force: :cascade do |t|
+    t.string   "name",       null: false
+    t.string   "url",        null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "username",        null: false
