@@ -14,9 +14,9 @@
       * CollectionIndexItem
       * CollectionFeedIndex
         * CollectionFeedIndexItem
-    * FeedIndex
-      * FeedIndexHeader
-      * FeedIndexItem
+    * CategoryIndex
+      * CategoryIndexHeader
+      * CategoryIndexItem
   - RightPop
     * FeedDetail
       * FeedHeader
@@ -35,7 +35,8 @@
 | "/sign-in" | "AuthFormContainer" |
 | "/" | "App" |
 | "/today" | "TodayIndex" |
-| "/feeds" | "FeedIndex" |
-| "/feeds/:feedId" | "FeedIndexItem" |
+| "/categories" | "CategoryIndex" |
+| "/categories/:id" | "CategoryIndexItem" |
 | "/collections/:collectionId" | "CollectionIndex" |
+| "/feeddetail/:id" | "FeedDetail" |
 | "/articles/:articleId" | "ArticleDetail" |

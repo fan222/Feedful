@@ -28,7 +28,14 @@
     1: {
       id: 1,
       name: "collection1",
-      feeds_id: [1,2,3]
+      feeds_ids: [1,2,3]
+    }
+  },
+  categories: {
+    1: {
+      id: 1,
+      name: "category1",
+      feeds_ids: [1,2,3]
     }
   },
   article: {
