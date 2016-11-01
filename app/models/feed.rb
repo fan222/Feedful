@@ -16,6 +16,6 @@ class Feed < ApplicationRecord
   has_many :collection_feeds
   has_many :collections, through: :collection_feeds, source: :collection
 
-  has_many :category_feeds,
+  has_many :category_feeds
   has_many :categories, through: :category_feeds, source: :category
 end
