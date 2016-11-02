@@ -4,11 +4,10 @@ import GreetingContainer from './greeting/greeting_container';
 
 const App = ({ children }) => (
   <div>
-    <header>
-      <Link to="/" className="header-link"><h1>Feedful</h1></Link>
+    <div>
       <GreetingContainer />
-    </header>
-    {children}
+      {children}
+    </div>
   </div>
 );
 

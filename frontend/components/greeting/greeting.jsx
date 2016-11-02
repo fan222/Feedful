@@ -1,13 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
-
-const sessionLinks = () => (
-  <ul className="login-signup" class="tab-group">
-    <Link to="/login" activeClassName="current">Login</Link>
-    &nbsp;or&nbsp;
-    <Link to="/signup" activeClassName="current">Sign up!</Link>
-  </ul>
-);
+import { Link, withRouter} from 'react-router';
 
 const personalGreeting = (currentUser, logout) => (
 	<hgroup className="header-group">
@@ -16,8 +8,20 @@ const personalGreeting = (currentUser, logout) => (
 	</hgroup>
 );
 
-const Greeting = ({ currentUser, logout }) => (
-  currentUser ? personalGreeting(currentUser, logout) : sessionLinks()
+const handleLogin = (router) => (e) => {
+  e.preventDefault();
+  router.push("/login");
+};
+
+const welcomePage = (router) => (
+	<hgroup className="header-group">
+    <h3>Welcome!</h3>
+    <button className="header-button" onClick={handleLogin(router)}>Log In</button>
+	</hgroup>
 );
 
-export default Greeting;
+const Greeting = ({ currentUser, logout, router}) => (
+  currentUser ? personalGreeting(currentUser, logout) : welcomePage(router)
+);
+
+export default withRouter(Greeting);

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router';
+import SessionLinks from './session_links';
 
 class SessionForm extends React.Component {
 	constructor(props) {
@@ -55,31 +56,38 @@ class SessionForm extends React.Component {
 
 	render() {
 		return (
-			<div className="login-form-container">
-				<form onSubmit={this.handleSubmit} className="login-form-box">
-					Welcome to Feedful!
-					<br/>
-					Please {this.props.formType} or {this.navLink()}
-					{this.renderErrors()}
-					<div className="login-form">
-						<br/>
-						<label> Username:
-							<input type="text"
-								value={this.state.username}
-								onChange={this.update("username")}
-								className="login-input" />
-						</label>
-						<br/>
-						<label> Password:
-							<input type="password"
-								value={this.state.password}
-								onChange={this.update("password")}
-								className="login-input" />
-						</label>
-						<br/>
-						<input type="submit" value={this.props.formType} />
-					</div>
-				</form>
+			<div className="log-form">
+			<SessionLinks />
+				<div className="login-form-container">
+					<form onSubmit={this.handleSubmit} className="login-form-box" className="sign-in">
+						<h1>Welcome to Feedful!</h1>
+
+							<div className="input">
+								<label>
+		              Username
+		            </label>
+									<input type="text"
+										value={this.state.username}
+										onChange={this.update("username")}
+										className="login-input" />
+							</div>
+
+							<div className="input">
+								<label>
+		              Password
+		            </label>
+									<input type="password"
+										value={this.state.password}
+										onChange={this.update("password")}
+										className="login-input" />
+						  </div>
+
+							<p>{this.renderErrors()}</p>
+		    			<div className="submit">
+								<input type="submit" className="button button-block" value={this.props.formType} name="commit"/>
+							</div>
+					</form>
+				</div>
 			</div>
 		);
 	}

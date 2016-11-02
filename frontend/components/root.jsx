@@ -5,6 +5,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import App from './app';
 import SessionFormContainer from './session_form/session_form_container';
+// import WelcomePage from './welcome_page/welcome_page';
 
 const Root = ({ store }) => {
 

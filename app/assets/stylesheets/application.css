@@ -1,69 +1,114 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
-html, body, header, nav, h1, a,
-ul, li, strong, main, button, i,
-section, img, div, h2, p, form,
-fieldset, label, input, textarea,
-span, article, footer, time, small {
+html body main div header section h1 h2 ul form a input label p{
   margin: 0;
-  padding: 0;
   border: 0;
-  outline: 0;
+  padding: 0;
   font: inherit;
-  color: inherit;
   text-align: inherit;
   text-decoration: inherit;
-  vertical-align: inherit;
-  box-sizing: inherit;
+  color: inherit;
   background: transparent;
 }
 
-body {
-  font-family: sans-serif;
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.log-form {
+  height: auto;
+  width: 400px;
+
+  padding: 30px;
+  margin: 100px auto;
 }
 
 ul {
   list-style: none;
 }
 
-img {
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.tab-group li {
+  float: left;
+  width: 50%;
+}
+
+
+.tab-group li a:hover {
+  background: #179b77;
+  color: #ffffff;
+}
+.tab-group .active a {
+  background: #1ab188;
+  color: #ffffff;
+}
+
+.log-form{
+  color: #ffffff;
+  background: rgba(19, 35, 47, 1.0);
+}
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #1ab188;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+.button:hover, .button:focus {
+  background: #179b77;
+}
+
+.button-block {
   display: block;
   width: 100%;
-  height: auto;
 }
 
-input[type="password"],
-input[type="email"],
-input[type="text"],
-input[type="submit"],
-textarea, button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 40px;
 }
-
-button,
-input[type="submit"] {
-  cursor: pointer;
+.input {
+  margin: 20px 0;
 }
-
-/* Clearfix */
-
-.clearfix:after {
-  content: "";
+.input > label {
   display: block;
-  clear: both;
+  font-weight: bold;
+}
+.input > input {
+  display: block;
+  padding: 5px;
+  width: 387px;
+}
+.input > input:focus {
+  border-color: #0c0;
 }
