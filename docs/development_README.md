@@ -3,7 +3,7 @@
 
 #### Heroku Link
 * [Feedful][feedful]
-[feedful]: feedful.herokuapp.com
+[feedful]: https://feedful.herokuapp.com/#/
 
 
 ## Minimum Viable Production
