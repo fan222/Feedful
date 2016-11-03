@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router';
-import SessionLinks from './session_links';
 
 class SessionForm extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			username: "",
-			password: ""
+			password: "",
+			formType: "login",
+			class1: "tab clearfix",
+			class2: "tab active clearfix"
 		};
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
@@ -31,14 +33,10 @@ class SessionForm extends React.Component {
 	handleSubmit(e) {
 		e.preventDefault();
 		const user = this.state;
-		this.props.processForm({user});
-	}
-
-	navLink() {
-		if (this.props.formType === "login") {
-			return <Link to="/signup">sign up instead</Link>;
+		if (this.state.formType === 'login') {
+			this.props.login({user});
 		} else {
-			return <Link to="/login">log in instead</Link>;
+			this.props.signup({user});
 		}
 	}
 
@@ -54,14 +52,28 @@ class SessionForm extends React.Component {
 		);
 	}
 
+	setclass1() {
+		if (this.state.class1 === "tab clearfix") {
+			this.setState({class1: "tab active clearfix",class2: "tab clearfix", formType: "signup"});
+		}
+	}
+
+	setclass2() {
+		if (this.state.class2 === "tab clearfix") {
+			this.setState({class2: "tab active clearfix", class1: "tab clearfix",formType: "login"});
+		}
+	}
+
 	render() {
 		return (
 			<div className="log-form">
-			<SessionLinks />
+				<ul className="tab-group clearfix">
+					<li className={this.state.class1}><a onClick={this.setclass1.bind(this)}>Sign Up</a></li>
+					<li className={this.state.class2}><a onClick={this.setclass2.bind(this)}>Log In</a></li>
+				</ul>
 				<div className="login-form-container">
 					<form onSubmit={this.handleSubmit} className="login-form-box" className="sign-in">
-						<h1>Welcome to Feedful!</h1>
-
+							<h1>Welcome to Feedful!</h1>
 							<div className="input">
 								<label>
 		              Username
@@ -82,16 +94,16 @@ class SessionForm extends React.Component {
 										className="login-input" />
 						  </div>
 
-							<p>{this.renderErrors()}</p>
+							<div>{this.renderErrors()}</div>
 		    			<div className="submit">
-								<input type="submit" className="button button-block" value={this.props.formType} name="commit"/>
+								<input type="submit" className="button button-block" value={this.state.formType} name="commit"/>
 							</div>
 					</form>
 				</div>
 			</div>
 		);
 	}
-
 }
+
 
 export default withRouter(SessionForm);

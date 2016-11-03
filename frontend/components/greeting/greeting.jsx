@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, withRouter} from 'react-router';
+import { Link} from 'react-router';
+import LoginModal from './login_modal';
 
 const personalGreeting = (currentUser, logout) => (
 	<hgroup className="header-group">
@@ -8,20 +9,9 @@ const personalGreeting = (currentUser, logout) => (
 	</hgroup>
 );
 
-const handleLogin = (router) => (e) => {
-  e.preventDefault();
-  router.push("/login");
-};
-
-const welcomePage = (router) => (
-	<hgroup className="header-group">
-    <h3>Welcome!</h3>
-    <button className="header-button" onClick={handleLogin(router)}>Log In</button>
-	</hgroup>
-);
 
 const Greeting = ({ currentUser, logout, router}) => (
-  currentUser ? personalGreeting(currentUser, logout) : welcomePage(router)
+  currentUser ? personalGreeting(currentUser, logout) : <LoginModal />
 );
 
-export default withRouter(Greeting);
+export default Greeting;
