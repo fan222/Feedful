@@ -16,6 +16,7 @@ class MiddlePage extends React.Component {
     return (
       <div className="middlepage">
         <h2>Welcome home</h2>
+        {this.props.children}
       </div>
     );
   }

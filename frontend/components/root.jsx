@@ -6,6 +6,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import App from './app';
 import SessionFormContainer from './session_form/session_form_container';
 import MiddlePageContainer from './middlepage/middlepage_container';
+import CategoriesItemContainer from './middlepage/categories_item_container';
 import SplashContainer from './splash/splash_container';
 
 const Root = ({ store }) => {
@@ -20,7 +21,7 @@ const Root = ({ store }) => {
   const _redirectIfLoggedIn = (nextState, replace) => {
     const currentUser = store.getState().session.currentUser;
     if (currentUser) {
-      replace('/');
+      replace('/home');
     }
   };
 
@@ -29,8 +30,9 @@ const Root = ({ store }) => {
     <Provider store={store}>
       <Router history={hashHistory}>
         <Route path="/" component={App} >
-          <IndexRoute component={SplashContainer} />
+          <IndexRoute component={SplashContainer} onEnter={_redirectIfLoggedIn}/>
           <Route path="home" component={MiddlePageContainer} onEnter={_ensureLoggedIn}>
+            <Route path="/categories/:id" component={CategoriesItemContainer} />
           </Route>
         </Route>
       </Router>

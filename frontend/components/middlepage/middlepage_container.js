@@ -3,10 +3,10 @@ import { logout} from '../../actions/session_actions';
 import MiddlePage from './middlepage';
 
 
-const mapStateToProps = ({ session }) => ({
-  loggedIn: Boolean(session.currentUser),
+const mapStateToProps = (state, children) => ({
+  loggedIn: Boolean(state.session.currentUser),
+  children: children.children
 });
-
 const mapDispatchToProps = (dispatch) => ({
     logout: user => dispatch(logout(user))
 });

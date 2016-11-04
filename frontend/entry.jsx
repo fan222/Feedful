@@ -4,7 +4,7 @@ import Modal from 'react-modal';
 
 import Root from './components/root';
 import configureStore from './store/store';
-import { fetchAllFeeds, fetchFeed } from './util/feeds_api_util';
+import { fetchAllFeeds, fetchFeed } from './actions/feeds_actions';
 
 
 document.addEventListener('DOMContentLoaded', () => {

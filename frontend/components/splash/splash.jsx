@@ -1,10 +1,16 @@
 import React from 'react';
+import {withRouter} from 'react-router';
 
 class Splash extends React.Component {
   constructor(props) {
     super(props);
   }
 
+  componentDidUpdate() {
+    if (this.props.loggedIn){
+      this.props.router.push('/home');
+    }
+  }
 
   splashPage() {
     let content;
@@ -25,4 +31,4 @@ class Splash extends React.Component {
   }
 }
 
-export default Splash;
+export default withRouter(Splash);
