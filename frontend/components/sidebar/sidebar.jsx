@@ -1,6 +1,6 @@
 import React from 'react';
 import Hamburger from 'react-icons/lib/fa/bars';
-import LoginModal from '../greeting/login_modal';
+import LoginModal from '../login/login_modal';
 
 
 class Sidebar extends React.Component {
@@ -31,19 +31,18 @@ class Sidebar extends React.Component {
 
 
   render() {
-
     return (
       <aside className='sidebar'>
-        <div>
-          <div className='hamburger-icon'>
-            <Hamburger />
+        <div className='sidebar-tabs'>
+          <div>
+            <div className='hamburger-icon'>
+              <Hamburger />
+            </div>
           </div>
+            <div className='sidebar-content-container'>
+              {this.sideContent()}
+            </div>
         </div>
-        <div className='spacer'></div>
-          <div className='sidebar-content-container'>
-            {this.sideContent()}
-          </div>
-        <div className='spacer'></div>
         {this.footer()}
       </aside>
     );

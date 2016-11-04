@@ -8,7 +8,10 @@ html body main div header section h1 h2 h3 h4 ul form a input label p{
   color: inherit;
   background: transparent;
 }
-
+body {
+  /*background-color: #eae8e8;*/
+  font-family: sans-serif;
+}
 .clearfix:after {
   content: "";
   display: block;
@@ -119,6 +122,10 @@ h1 {
 }
 
 .sidebar {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  flex-direction: column;
   height: 100%;
   width: 68px;
   float: left;
@@ -130,7 +137,7 @@ h1 {
   left: 0px;
   opacity: 1;
   background-size: 24px 24px;
-  overflow: hidden;
+  overflow: auto;
   -webkit-background-size: 24px 24px;
   -mox-background-size: 24px 24px;
   background: #1ab188;
@@ -149,8 +156,8 @@ h1 {
   -ms-user-select: none;
   user-select: none;
   transform: translateZ(0);
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   -webkit-appearance: none;
 }
 .hamburger-icon {
@@ -170,13 +177,13 @@ h1 {
 }
 .sidebar:hover .sidebar-content-container {
   display: block;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   -webkit-appearance: none;
 }
 
 .sidebar-login {
-  margin: 70px;
+  margin: 100px 27px;
 }
 
 .login-signup {
@@ -207,7 +214,6 @@ h1 {
 
 .sidebar-footer {
   display: none;
-  position: fixed;
   left: 80px;
   bottom: 0;
 }
@@ -218,12 +224,13 @@ h1 {
   color: #ffffff;
 }
 .logout-button {
-  width: 100%;
+  margin: 0px 78px;
+  width: 42%;
   border: 0;
   outline: none;
   border-radius: 0;
   padding: 15px 15px;
-  font-size: 1rem;
+  font-size: 0.5rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .1em;
@@ -235,20 +242,39 @@ h1 {
 }
 .sidebar:hover .sidebar-footer {
   display: block;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   -webkit-appearance: none;
+}
+.sidebar-tabs {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex: 1;
 }
 
 .middlepage {
   margin-left: 68px;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   -webkit-appearance: none;
 }
 .sidebar:hover ~ .middlepage {
   margin-left: 268px;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  -webkit-appearance: none;
+}
+
+.splash {
+  margin-left: 68px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  -webkit-appearance: none;
+}
+.sidebar:hover ~ .tbd > .splash {
+  margin-left: 268px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   -webkit-appearance: none;
 }
