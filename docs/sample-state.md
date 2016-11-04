@@ -12,14 +12,16 @@
       id: 1,
       name: "feed 1",
       url: "feed1_url",
-      category: "category1",
+      description: "feed 1 description",
       articles: {
         1: {
           id: 1,
           title: "articleName",
           summary: "articleSummary",
           author: "authorname",
-          image: "image"
+          image: "image",
+          url: "article_url",
+          content: "content"
         }
       }
     }
@@ -40,8 +42,7 @@
   },
   article: {
     id: 1,
-    url: "article_url",
-    content: "content",
+    feed_id: 1
   }
 }
 ```

@@ -4,6 +4,7 @@ import Modal from 'react-modal';
 
 import Root from './components/root';
 import configureStore from './store/store';
+import { fetchAllFeeds, fetchFeed } from './util/feeds_api_util';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -18,4 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const root = document.getElementById('root');
   ReactDOM.render(<Root store={store}/>, root);
+
+  window.store = store;
+  window.fetchAllFeeds  = fetchAllFeeds;
+  window.fetchFeed = fetchFeed;
 });

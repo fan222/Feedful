@@ -6,10 +6,12 @@
 #  title      :string           not null
 #  author     :string
 #  feed_id    :integer          not null
+#  url        :string           not null
+#  entry_id   :string
 #  published  :string
 #  image      :string
-#  summary    :string
-#  content    :string
+#  summary    :text
+#  content    :text
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #

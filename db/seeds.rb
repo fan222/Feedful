@@ -9,42 +9,42 @@
 user1 = User.create!(username: 'fan', password: 123456)
 
 Feed.create!([
-{name: "IndieGames", url: "http://www.indiegames.com/blog/atom.xml"},
-{name: "The Verge", url: "http://www.theverge.com/rss/group/features/index.xml"},
-{name: "Wired", url: "http://www.wired.com/feed/"},
+{name: "MacRumors", website: "http://www.macrumors.com/", url: "http://feeds.macrumors.com/MacRumors-All", description: "Apple, iPhone, iPad, Mac News and Rumors"},
+{name: "React", website: "https://facebook.github.io/react/", url: "https://facebook.github.io/react/feed.xml", description: "A JavaScript library for building user interfaces"},
+{name: "NewsJavascrip", website: "https://www.javascript.com/", url: "https://www.javascript.com/feed/rss", description: "Learn JavaScript and stay connected with the latest news created and curated by the JavaScript community"}
 ])
 
 Category.create!([
-  {name: 'General'},
-  {name: 'Game'},
+  {name: 'Mac'},
+  {name: 'Coding'},
 ])
 
 
 CategoryFeed.create!([
-  {feed_id: Feed.find_by(name: "The Verge").id, category_id: Category.find_by(name: "General").id},
-  {feed_id: Feed.find_by(name: "Wired").id, category_id: Category.find_by(name: "General").id},
-  {feed_id: Feed.find_by(name: "IndieGames").id, category_id: Category.find_by(name: "Game").id},
+  {feed_id: Feed.find_by(name: "MacRumors").id, category_id: Category.find_by(name: "Mac").id},
+  {feed_id: Feed.find_by(name: "React").id, category_id: Category.find_by(name: "Coding").id},
+  {feed_id: Feed.find_by(name: "NewsJavascrip").id, category_id: Category.find_by(name: "Coding").id},
 
   ])
 
 
 Collection.create!([
-  {name: 'Best Tech', user_id: User.find_by(username: 'fan').id},
-  {name: 'My Game', user_id: User.find_by(username: 'fan').id},
+  {name: 'Tech', user_id: User.find_by(username: 'fan').id},
+  {name: 'My code', user_id: User.find_by(username: 'fan').id},
   ])
 
 CollectionFeed.create!([
-  {collection_id: Collection.find_by(name: 'Best Tech').id, feed_id: Feed.find_by(name: 'The Verge').id},
-  {collection_id: Collection.find_by(name: 'Best Tech').id, feed_id: Feed.find_by(name: 'Wired').id},
-  {collection_id: Collection.find_by(name: 'My Game').id, feed_id: Feed.find_by(name: 'IndieGames').id},
+  {collection_id: Collection.find_by(name: 'Tech').id, feed_id: Feed.find_by(name: 'MacRumors').id},
+  {collection_id: Collection.find_by(name: 'My code').id, feed_id: Feed.find_by(name: 'React').id},
+  {collection_id: Collection.find_by(name: 'My code').id, feed_id: Feed.find_by(name: 'NewsJavascrip').id},
   ])
 
 
 Article.create!([
-  {title: "game yeah1", feed_id: 1, url: "game_url"},
-  {title: "game yeah2", feed_id: 1, url: "game_url"},
-  {title: "tech1", feed_id: 2, url: "game_url"},
-  {title: "tech2", feed_id: 2, url: "game_url"},
-  {title: "tech3", feed_id: 3, url: "game_url"},
-  {title: "tech4", feed_id: 3, url: "game_url"},
+  {title: "Mac yeah1", feed_id: 1, url: "mac_url1"},
+  {title: "Mac yeah2", feed_id: 1, url: "mac_url2"},
+  {title: "code1", feed_id: 2, url: "code_url1"},
+  {title: "code2", feed_id: 2, url: "code_url2"},
+  {title: "code3", feed_id: 3, url: "code_url3"},
+  {title: "code4", feed_id: 3, url: "code_url4"},
   ])
