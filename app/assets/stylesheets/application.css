@@ -1,4 +1,4 @@
-html body main div header section h1 h2 ul form a input label p{
+html body main div header section h1 h2 h3 h4 ul form a input label p{
   margin: 0;
   border: 0;
   padding: 0;
@@ -42,8 +42,8 @@ ul {
   font-size: 20px;
   text-align: center;
   cursor: pointer;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 .tab-group li {
@@ -77,8 +77,8 @@ ul {
   letter-spacing: .1em;
   background: #1ab188;
   color: #ffffff;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   -webkit-appearance: none;
 }
 .button:hover, .button:focus {
@@ -116,4 +116,139 @@ h1 {
   width: 30px;
   height: 30px;
   background: url('/assets/logo30.png');
+}
+
+.sidebar {
+  height: 100%;
+  width: 68px;
+  float: left;
+  color: rgba( 0, 0, 0, 0.63 );
+  line-height: 28px;
+  font-weight: normal;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  background-size: 24px 24px;
+  overflow: hidden;
+  -webkit-background-size: 24px 24px;
+  -mox-background-size: 24px 24px;
+  background: #1ab188;
+  background-position: 14px 36px;
+  background-repeat: no-repeat;
+  -webkit-background-size: 24px;
+  -webkit-background-size: 24px;
+  -ms-background-size: 24px;
+  -o-background-size: 24px;
+  background-size: 24px;
+  opacity: 1;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transform: translateZ(0);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-appearance: none;
+}
+.hamburger-icon {
+  margin-top: 15px;
+  margin-left: 19px;
+  font-size: 26px;
+  color: white;
+}
+.sidebar-content-container {
+  display: none;
+}
+.sidebar:hover {
+  width: 268px;
+}
+.sidebar:hover .hamburger-icon {
+  opacity: 0;
+}
+.sidebar:hover .sidebar-content-container {
+  display: block;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-appearance: none;
+}
+
+.sidebar-login {
+  margin: 70px;
+}
+
+.login-signup {
+  margin-left: -12px;
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 15px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #179b77;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-appearance: none;
+}
+
+.login-signup:hover, .login-signup:focus {
+  background: black;
+}
+.logout-button:hover, .logout-button:focus {
+  background: black;
+}
+
+
+
+.sidebar-footer {
+  display: none;
+  position: fixed;
+  left: 80px;
+  bottom: 0;
+}
+.sidebar-footer-name {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  color: #ffffff;
+}
+.logout-button {
+  width: 100%;
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #179b77;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-appearance: none;
+}
+.sidebar:hover .sidebar-footer {
+  display: block;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-appearance: none;
+}
+
+.middlepage {
+  margin-left: 68px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-appearance: none;
+}
+.sidebar:hover ~ .middlepage {
+  margin-left: 268px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-appearance: none;
 }

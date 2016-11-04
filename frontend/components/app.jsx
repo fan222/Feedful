@@ -1,12 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router';
-import GreetingContainer from './greeting/greeting_container';
+import SidebarContainer from './sidebar/sidebar_container';
+import MiddlePage from './middlepage/middlepage';
 
 const App = ({ children }) => (
   <div>
     <div>
-      <GreetingContainer />
-      {children}
+      <SidebarContainer />
+      <MiddlePage />
+      <div className="tbd">
+        {children}
+      </div>
     </div>
   </div>
 );
