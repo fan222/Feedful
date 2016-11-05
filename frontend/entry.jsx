@@ -7,6 +7,9 @@ import configureStore from './store/store';
 import { fetchAllFeeds, fetchFeed } from './actions/feeds_actions';
 
 
+import { fetchAllCollections } from './util/categories_api_util';
+
+
 document.addEventListener('DOMContentLoaded', () => {
   let store;
   Modal.setAppElement(document.body);
@@ -23,4 +26,5 @@ document.addEventListener('DOMContentLoaded', () => {
   window.store = store;
   window.fetchAllFeeds  = fetchAllFeeds;
   window.fetchFeed = fetchFeed;
+  window.fetchAllCollections = fetchAllCollections;
 });

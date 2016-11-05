@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-  helper_method :current_user, :logged_in?, :fetch_parse
+  helper_method :current_user, :logged_in?, :fetch_parse, :get_feeds_id
 
   private
 
@@ -87,5 +87,13 @@ class ApplicationController < ActionController::Base
     suppress(Exception) do
       /src="([^"]+)"/.match(string)[1]
     end
+  end
+
+  def get_feeds_id(collection)
+    ids = []
+    collection.feeds.each do |feed|
+      ids.push(feed.id)
+    end
+    ids
   end
 end
