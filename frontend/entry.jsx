@@ -4,7 +4,7 @@ import Modal from 'react-modal';
 
 import Root from './components/root';
 import configureStore from './store/store';
-
+import { fetchAllCollections } from './actions/collections_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
@@ -20,5 +20,5 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(<Root store={store}/>, root);
 
   window.store = store;
-
+  window.fetchAllCollections = fetchAllCollections;
 });
