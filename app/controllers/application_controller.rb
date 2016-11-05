@@ -89,9 +89,9 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  def get_feeds_id(collection)
+  def get_feeds_id(set)
     ids = []
-    collection.feeds.each do |feed|
+    set.feeds.each do |feed|
       ids.push(feed.id)
     end
     ids

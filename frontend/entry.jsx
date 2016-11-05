@@ -5,6 +5,7 @@ import Modal from 'react-modal';
 import Root from './components/root';
 import configureStore from './store/store';
 import { fetchAllCollections } from './actions/collections_actions';
+import { fetchAllCategories } from './actions/categories_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
@@ -21,4 +22,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.store = store;
   window.fetchAllCollections = fetchAllCollections;
+  window.fetchAllCategories = fetchAllCategories;
 });
