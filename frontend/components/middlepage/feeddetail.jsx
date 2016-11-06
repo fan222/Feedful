@@ -13,7 +13,7 @@ class FeedDetail extends React.Component {
     } else {
       return (
         <div className="feeddetail">
-          <h1 className="feeddetail-title">{this.props.feed.name}</h1>
+          <div className="feeddetail-title">{this.props.feed.name}</div>
           <div className="feeddetail-main">
             <ul className="feeddetail-ul">
               {Object.keys(this.props.feed.articles).map( articleId =>

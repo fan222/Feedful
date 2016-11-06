@@ -25,6 +25,12 @@ class CategoriesItem extends React.Component {
     };
   }
 
+  handleLi(id) {
+    return (e) => {
+      this.props.router.push(`/home/feeds/${id}`);
+    };
+  }
+
 
   render() {
     if (Object.keys(this.props.feeds).length === 1) {
@@ -41,7 +47,7 @@ class CategoriesItem extends React.Component {
           <div className="feedblock-container">
             <ul className="feedblock-ul clearfix">
               {this.props.categories[this.props.categoriesId].feeds_ids.map( id =>
-                <li key={id} className="feedblock-li">
+                <li key={id} onClick={this.handleLi(id)} className="feedblock-li">
                   <FeedBlock feed={ this.props.feeds[id]} />
                 </li>
                 )
