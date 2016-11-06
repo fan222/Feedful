@@ -35,12 +35,13 @@ class ApplicationController < ActionController::Base
       articles = {}
       num = 0
       feed_detail.entries.each_with_index do |article, idx|
-        break if num >=10
+        break if num >=12
         num += 1
         author = article.author ? article.author : "anonymity"
         summary= article.summary ? article.summary : "none"
         content= article.content ? article.content : "none"
         article_obj = {
+          id: idx+1,
           title: article.title,
           author: author,
           feed_id: feed.id,
@@ -56,7 +57,8 @@ class ApplicationController < ActionController::Base
       articles
     rescue
       dummy_articles = {
-        1 => {
+        0 => {
+          id: 0,
           title: "No article fetched",
           author: "none",
           feed_id: "none",

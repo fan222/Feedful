@@ -73,7 +73,7 @@ class SessionForm extends React.Component {
 				</ul>
 				<div className="login-form-container">
 					<form onSubmit={this.handleSubmit} className="login-form-box" className="sign-in">
-							<h1>Welcome to Feedful!</h1>
+							<h1 className="modal-h1">Welcome to Feedful!</h1>
 							<div className="input">
 								<label>
 		              Username
