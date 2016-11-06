@@ -57,6 +57,9 @@
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   -webkit-appearance: none;
+  width: 70%;
+  border: 1px solid black;
+  margin-left: -8px;
 }
 
 .sidebar-login {
@@ -64,7 +67,7 @@
 }
 
 .login-signup {
-  margin-left: -12px;
+  margin-left: -6px;
   border: 0;
   outline: none;
   border-radius: 0;
@@ -154,4 +157,23 @@
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   -webkit-appearance: none;
+}
+
+.explore-button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #179b77;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-appearance: none;
+}
+.explore-button:hover, .explore-button:focus {
+  background: black;
 }

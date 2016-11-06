@@ -1,0 +1,69 @@
+.current-cat {
+  margin-left: 50px;
+  font-size: 26px;
+}
+
+
+
+.othercat {
+  background-color: #ECECEC;
+  width: 167px;
+  float: left;
+  font-size: 14px;
+  padding: 10px;
+  margin-right: 17px;
+  margin-bottom: 10px;
+}
+
+.othercat:hover {
+  background-color: #dddddd;
+}
+
+.feedblock-li {
+  margin-right: 34px;
+  width: 240px;
+  float: left;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 51px;
+  height: 369px;
+  padding-bottom: 0px;
+  border: 1px solid #D8D8D8;
+  background-color: #FFF;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.feedblock-img {
+  width: 240px;
+  height: 133px;
+}
+
+.feedblock-li:hover .feedblock-title {
+  text-decoration: underline;
+}
+.feedblock-li .feedblock-title {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: -0.04em;
+  line-height: 30px;
+  max-height: 30px;
+  overflow: hidden;
+  text-transform: capitalize;
+  cursor: pointer;
+  padding-top: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.feedblock-des {
+  font-size: 13px;
+  overflow: hidden;
+  height: 51px;
+  line-height: 17px;
+  clear: both;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

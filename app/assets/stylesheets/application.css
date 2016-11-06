@@ -14,7 +14,7 @@
  *= require_self
  */
 
-html body main div header section h1 h2 h3 h4 ul form a input label p{
+html body main div header section h1 h2 h3 h4 ul li img form a input label p{
   margin: 0;
   border: 0;
   padding: 0;

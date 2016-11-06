@@ -4,8 +4,8 @@ import Modal from 'react-modal';
 
 import Root from './components/root';
 import configureStore from './store/store';
-import { fetchAllCollections } from './actions/collections_actions';
-import { fetchAllCategories } from './actions/categories_actions';
+import { fetchFeed } from './util/feeds_api_util';
+
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
@@ -21,6 +21,5 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(<Root store={store}/>, root);
 
   window.store = store;
-  window.fetchAllCollections = fetchAllCollections;
-  window.fetchAllCategories = fetchAllCategories;
+  window.fetchFeed = fetchFeed;
 });

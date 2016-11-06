@@ -8,6 +8,11 @@ import SessionFormContainer from './session_form/session_form_container';
 import MiddlePageContainer from './middlepage/middlepage_container';
 import CategoriesItemContainer from './middlepage/categories_item_container';
 import SplashContainer from './splash/splash_container';
+import FeedDetailContainer from './middlepage/feeddetail_container';
+
+import { fetchAllCollections } from '../actions/collections_actions';
+import { fetchAllCategories } from '../actions/categories_actions';
+import { fetchAllFeeds } from '../actions/feeds_actions';
 
 const Root = ({ store }) => {
 
@@ -15,6 +20,16 @@ const Root = ({ store }) => {
     const currentUser = store.getState().session.currentUser;
     if (!currentUser) {
       replace('/');
+    } else {
+      if (Object.keys(store.getState().feeds).length === 1) {
+        store.dispatch(fetchAllFeeds());
+      }
+      if (Object.keys(store.getState().collections).length === 1) {
+        store.dispatch(fetchAllCollections());
+      }
+      if (Object.keys(store.getState().categories).length === 1) {
+        store.dispatch(fetchAllCategories());
+      }
     }
   };
 
@@ -32,7 +47,8 @@ const Root = ({ store }) => {
         <Route path="/" component={App} >
           <IndexRoute component={SplashContainer} onEnter={_redirectIfLoggedIn}/>
           <Route path="home" component={MiddlePageContainer} onEnter={_ensureLoggedIn}>
-            <Route path="/categories/:id" component={CategoriesItemContainer} />
+            <Route path="categories/:catId" component={CategoriesItemContainer} />
+            <Route path="feeds/:feedId" component={FeedDetailContainer} />
           </Route>
         </Route>
       </Router>

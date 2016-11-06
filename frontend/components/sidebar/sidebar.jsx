@@ -1,6 +1,7 @@
 import React from 'react';
 import Hamburger from 'react-icons/lib/fa/bars';
 import LoginModal from '../login/login_modal';
+import { withRouter } from 'react-router';
 
 
 class Sidebar extends React.Component {
@@ -16,7 +17,17 @@ class Sidebar extends React.Component {
     if (!this.props.loggedIn) {
       sideContent = <LoginModal />;
       return sideContent;
+    } else {
+      sideContent = (<button className='explore-button' onClick={this.handleExp()}>Explore</button>);
+      return sideContent;
     }
+  }
+
+  handleExp() {
+    return (e) => {
+      e.preventDefault();
+      this.props.router.push(`/home/categories/1`);
+    };
   }
 
   footer() {
@@ -49,4 +60,4 @@ class Sidebar extends React.Component {
   }
 }
 
-export default Sidebar;
+export default withRouter(Sidebar);

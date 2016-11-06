@@ -51,7 +51,7 @@ class ApplicationController < ActionController::Base
           summary: summary,
           content: content
         }
-        articles[idx] = article_obj
+        articles[idx+1] = article_obj
       end
       articles
     rescue

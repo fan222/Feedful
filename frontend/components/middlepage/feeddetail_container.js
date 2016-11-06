@@ -1,12 +1,8 @@
 import { connect } from 'react-redux';
-import CategoriesItem from './categories_item';
-
+import FeedDetail from './feeddetail';
 
 const mapStateToProps = (state, { params, location }) => ({
-  feeds: state.feeds,
-  categories: state.categories,
-  categoriesId: params.catId,
-  pageType: location.pathname.slice(6, 9)
+  feeds: state.feeds[params.feedId]
 });
 
 const mapDispatchToProps = (dispatch) => ({
@@ -16,4 +12,4 @@ const mapDispatchToProps = (dispatch) => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(CategoriesItem);
+)(FeedDetail);
