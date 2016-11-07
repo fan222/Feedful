@@ -9,6 +9,8 @@ import MiddlePageContainer from './middlepage/middlepage_container';
 import CategoriesItemContainer from './middlepage/categories_item_container';
 import SplashContainer from './splash/splash_container';
 import FeedDetailContainer from './middlepage/feeddetail_container';
+import TodayIndexContainer from './today_index/today_index_container';
+import CollectionIndexContainer from './today_index/collection_index_container';
 
 import { fetchAllCollections } from '../actions/collections_actions';
 import { fetchAllCategories } from '../actions/categories_actions';
@@ -49,6 +51,7 @@ const Root = ({ store }) => {
           <Route path="home" component={MiddlePageContainer} onEnter={_ensureLoggedIn}>
             <Route path="categories/:catId" component={CategoriesItemContainer} />
             <Route path="feeds/:feedId" component={FeedDetailContainer} />
+            <Route path="collections/:colId" component={CollectionIndexContainer} />
           </Route>
         </Route>
       </Router>

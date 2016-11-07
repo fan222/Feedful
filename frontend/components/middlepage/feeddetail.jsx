@@ -17,7 +17,8 @@ const customStyles = {
     top                         : '0',
     left                        : '80%',
     transition                  : '.5s',
-    zIndex                      : '2'
+    zIndex                      : '2',
+    padding                     : '0'
   }
 };
 

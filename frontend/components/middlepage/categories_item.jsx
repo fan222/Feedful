@@ -33,7 +33,7 @@ class CategoriesItem extends React.Component {
 
 
   render() {
-    if (Object.keys(this.props.feeds) === [0]) {
+    if (Object.keys(this.props.feeds).length === 1) {
       return <h3>Loading</h3>;
     } else {
       let otherNames = this.otherCat(this.props.categories,
