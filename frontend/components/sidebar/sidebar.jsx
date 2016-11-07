@@ -7,19 +7,19 @@ import { withRouter } from 'react-router';
 class Sidebar extends React.Component {
   constructor(props) {
     super(props);
-    this.sideContent = this.sideContent.bind(this);
+    this.sideBarButton = this.sideBarButton.bind(this);
     this.footer = this.footer.bind(this);
   }
 
-  sideContent() {
+  sideBarButton() {
     let buttonText = 'Start';
-    let sideContent;
+    let sideBarButton;
     if (!this.props.loggedIn) {
-      sideContent = <LoginModal />;
-      return sideContent;
+      sideBarButton = <LoginModal />;
+      return sideBarButton;
     } else {
-      sideContent = (<button className='explore-button' onClick={this.handleExp()}>Explore</button>);
-      return sideContent;
+      sideBarButton = (<button className='explore-button' onClick={this.handleExp()}>Explore</button>);
+      return sideBarButton;
     }
   }
 
@@ -51,7 +51,8 @@ class Sidebar extends React.Component {
             </div>
           </div>
             <div className='sidebar-content-container'>
-              {this.sideContent()}
+              {this.sideBarButton()}
+              
             </div>
         </div>
         {this.footer()}

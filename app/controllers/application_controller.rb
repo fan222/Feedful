@@ -87,7 +87,7 @@ class ApplicationController < ActionController::Base
 
   def get_src(string)
     suppress(Exception) do
-      /src="([^"]+)"/.match(string)[1]
+      /<img.+src="([^"]+)"/.match(string)[1]
     end
   end
 
