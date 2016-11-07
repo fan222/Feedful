@@ -23,7 +23,7 @@ class ArticleBlock extends React.Component {
 
   render () {
     return (
-      <div className="article_block clearfix">
+      <div className="article_block clearfix" onClick={this.props.onClick}>
         <div className="article-published">{this.props.article.published.slice(0,10)}</div>
         <img src={this.props.article.image} className="article-img"></img>
         <div className="article-title">{this.props.article.title}</div>
