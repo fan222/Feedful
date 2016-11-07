@@ -8,16 +8,14 @@ class ArticleDetail extends React.Component {
   }
 
   insertContent() {
-    let $content = $(".article-detail-content");
     let str;
     if (this.props.article.summary === "none") {
       str = this.props.article.content;
     } else {
       str = this.props.article.summary;
     }
-    let html = $.parseHTML(str);
     debugger;
-    $content.append(html);
+    $(".article-detail-content").push(str);
   }
 
   render() {
@@ -27,7 +25,6 @@ class ArticleDetail extends React.Component {
         <div className="article-detail-author">By {this.props.article.author}</div>
         <div className="article-detail-published">{this.props.article.published.slice(0,10)}</div>
         <div className="article-detail-content"></div>
-        {this.insertContent()}
         <a href={this.props.article.url} className="article-detail-url">VISIT WEBSITE</a>
       </div>
     );

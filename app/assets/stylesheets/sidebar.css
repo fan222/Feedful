@@ -14,9 +14,7 @@
   left: 0px;
   opacity: 1;
   background-size: 24px 24px;
-  overflow: auto;
   -webkit-background-size: 24px 24px;
-  -mox-background-size: 24px 24px;
   background: #1ab188;
   background-position: 14px 36px;
   background-repeat: no-repeat;
@@ -32,7 +30,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  transform: translateZ(0);
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   -webkit-appearance: none;
