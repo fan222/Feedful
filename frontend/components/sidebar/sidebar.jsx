@@ -1,7 +1,10 @@
 import React from 'react';
+import { withRouter } from 'react-router';
+
 import Hamburger from 'react-icons/lib/fa/bars';
 import LoginModal from '../login/login_modal';
-import { withRouter } from 'react-router';
+import SidebarCollection from './sidebar_collection';
+
 
 
 class Sidebar extends React.Component {
@@ -51,8 +54,10 @@ class Sidebar extends React.Component {
             </div>
           </div>
             <div className='sidebar-content-container'>
-              {this.sideBarButton()}
-              
+              <div className='sidebar-content-buttons'>
+                {this.sideBarButton()}
+              </div>
+              <SidebarCollection feeds={this.props.feeds} collections={this.props.collections}/>
             </div>
         </div>
         {this.footer()}

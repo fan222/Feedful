@@ -1,0 +1,82 @@
+.explore-button {
+  margin-left: 37px;
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #179b77;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-appearance: none;
+}
+.explore-button:hover, .explore-button:focus {
+  background: black;
+}
+
+.sidebar-content-buttons {
+  margin: 75px 0;
+}
+
+.sidebar-collection {
+  color: #e8fffb;
+}
+
+.sidebar-collection-title{
+  font-weight: 700;
+  font-size: 18px;
+  padding-left: 48px;
+  text-transform: uppercase;
+  width: 190px;
+}
+.sidebar-collection-ul {
+  width: 190px;
+  padding-left: 0;
+}
+
+.sidebar-collection-li {
+  padding-left: 0;
+}
+
+.sidebar-collection-item-name {
+  float: left;
+}
+
+.sidebar-collection-item-li {
+  margin-left: 25px;
+  width: 143px;
+  font-size: 15px;
+}
+
+.sidebar-collection-item-name {
+  width: 142px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.sidebar-collection-item-name:hover, .sidebar-collection-item-li:hover {
+  background-color: black;
+  cursor: pointer;
+}
+.arrow-show {
+  padding-left: 20px;
+  padding-right: 10px;
+  display: block;
+}
+.arrow-hide {
+  padding-left: 20px;
+  padding-right: 10px;
+  display: none;
+}
+.arrow-float {
+  float: left;
+  cursor: pointer;
+}
+
+.sidebar-collection-item {
+  margin-bottom: 10px;
+}
