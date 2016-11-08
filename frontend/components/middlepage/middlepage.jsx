@@ -12,6 +12,13 @@ class MiddlePage extends React.Component {
     }
   }
 
+  componentWillUpdate(){
+    if (this.props.loggedIn){
+      this.props.fetchAllCollections();
+    }
+  }
+
+
   render() {
     return (
       <div className="middlepage">

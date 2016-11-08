@@ -19,6 +19,7 @@ class ArticleBlock extends React.Component {
     result = result.replace(/&#8216;/g, "'");
     result = result.replace(/&#038;/g, '&');
     result = result.replace(/&#36;/g, '$');
+    result = result.replace(/&#8230;/g, '...');
     return result;
   }
 

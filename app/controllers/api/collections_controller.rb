@@ -1,7 +1,8 @@
 class Api::CollectionsController < ApplicationController
   def index
-    @collections = Collection.all.includes(:feeds)
-    render :index
+    if current_user
+      @collections = current_user.collections.includes(:feeds)
+    end
   end
 
   def create

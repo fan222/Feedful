@@ -21,6 +21,7 @@
 }
 
 .splash-top-head {
+  width: 400px;
   text-align: left;
   font-size: 34px;
   margin-bottom: 12px;
@@ -34,6 +35,7 @@
 }
 
 .splash-top-description {
+  width: 400px;
   font-size: 21px;
   line-height: 1.4em;
   color: #757575;
