@@ -1,6 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import SidebarCollectionItem from './sidebar_collection_item';
+import Cog from 'react-icons/lib/fa/cog';
 
 
 class SidebarCollection extends React.Component {
@@ -40,7 +41,12 @@ class SidebarCollection extends React.Component {
   render() {
     return (
       <div className="sidebar-collection">
-        <div className="sidebar-collection-title">My Feeds</div>
+        <div className="clearfix cog-title">
+          <div className="sidebar-collection-title">My Feeds</div>
+          <div className="sidebar-collection-cog">
+            <Cog />
+          </div>
+        </div>
           {this.collections()}
       </div>
     );

@@ -32,7 +32,21 @@
   padding-left: 38px;
   text-transform: uppercase;
   width: 190px;
+  float: left;
+  width: 112px;
 }
+
+.sidebar-collection-cog {
+  float: left;
+}
+.sidebar-collection-cog:hover {
+  color: #000000;
+}
+
+.cog-title {
+  width: 188px;
+}
+
 .sidebar-collection-ul {
   width: 190px;
   padding-left: 0;
@@ -59,7 +73,7 @@
 }
 
 .sidebar-collection-item-name:hover, .sidebar-collection-item-li:hover {
-  background-color: black;
+  color: black;
   cursor: pointer;
 }
 .arrow-show {

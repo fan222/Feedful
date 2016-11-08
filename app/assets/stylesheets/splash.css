@@ -1,0 +1,92 @@
+.tbd {
+  margin-top: -22px;
+  margin-left: -10px;
+  margin-right: -8px;
+}
+.feedful-screenshot {
+  width: 890px;
+  height: 540px;
+  position: absolute;
+  top: 200px;
+}
+.splash {
+  background-color: #E2E2E1;
+  padding-top: 50px;
+  padding-left: 200px;
+}
+
+.splash-top {
+  position: relative;
+  padding-bottom: 230px;
+}
+
+.splash-top-head {
+  text-align: left;
+  font-size: 34px;
+  margin-bottom: 12px;
+  line-height: 1em;
+}
+
+.splash-login {
+  margin-left: -21px;
+  top: -80px;
+  position: relative;
+}
+
+.splash-top-description {
+  font-size: 21px;
+  line-height: 1.4em;
+  color: #757575;
+  max-width: 500px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.splash-head {
+  color: #75756C;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: -156px;
+  margin-top: -16px;
+  padding-bottom: 75px;
+}
+
+.splash-middle {
+  position: absolute;
+  top: 1000px;
+}
+
+.splash-middle-head {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: none;
+  line-height: 1.2em;
+  margin-bottom: 68px;
+}
+
+.splash-middle-features {
+  width: 270px;
+  float: left;
+  margin-right: 34px;
+  margin-bottom: 34px;
+  overflow: hidden;
+}
+
+.splash-middle-feature-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 17px;
+  margin-bottom: 8px;
+}
+
+.splash-middle-feature-content {
+  font-size: 16px;
+  color: rgba( 0, 0, 0, 0.5 );
+  line-height: 23px;
+  height: 92px;
+}
+
+.splash-middle-feature-icon {
+  font-size: 40px;
+}
