@@ -86,7 +86,7 @@ class CollectionIndex extends React.Component {
       let articles = this.sortArticles(this.props.collection, this.props.feeds);
       return (
         <div className="collection-index">
-          <div className="collection-index-title">{this.props.collection.name}</div>
+          <div className="collection-index-title">& {this.props.collection.name}</div>
           <div className="collection-index-count">{articles.length} unread articles</div>
           <div className="collection-index-main">
             <ul className="collection-index-ul">
