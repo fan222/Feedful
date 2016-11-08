@@ -21,7 +21,8 @@ class Sidebar extends React.Component {
       sideBarButton = <LoginModal />;
       return sideBarButton;
     } else {
-      sideBarButton = (<button className='explore-button' onClick={this.handleExp()}>Explore</button>);
+      sideBarButton = (<button className='explore-button'
+                        onClick={this.handleExp()}>Explore</button>);
       return sideBarButton;
     }
   }
@@ -37,10 +38,18 @@ class Sidebar extends React.Component {
     let footer;
     if (this.props.loggedIn) {
       footer = <footer className='sidebar-footer'>
-        <button className='logout-button' onClick={this.props.logout}>Logout</button>
+        <button className='logout-button'
+                onClick={this.props.logout}>Logout</button>
       </footer>;
     }
     return footer;
+  }
+
+  sidebarCol() {
+    if (this.props.loggedIn) {
+      return <SidebarCollection feeds={this.props.feeds}
+              collections={this.props.collections}/>;
+    }
   }
 
 
@@ -57,7 +66,7 @@ class Sidebar extends React.Component {
               <div className='sidebar-content-buttons'>
                 {this.sideBarButton()}
               </div>
-              <SidebarCollection feeds={this.props.feeds} collections={this.props.collections}/>
+                {this.sidebarCol()}
             </div>
         </div>
         {this.footer()}
