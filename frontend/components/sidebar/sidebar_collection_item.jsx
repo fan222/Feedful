@@ -7,8 +7,8 @@ import ArrowDown from 'react-icons/lib/fa/arrow-down';
 class SidebarCollectionItem extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {show1: "arrow-hide arrow-float arrow",
-                  show2: "arrow-show arrow-float arrow" };
+    this.state = {show1: "arrow-hide arrow-float",
+                  show2: "arrow-show arrow-float" };
   }
 
   handleColUl(id) {
@@ -28,18 +28,18 @@ class SidebarCollectionItem extends React.Component {
   handleClick1() {
     return (e) => {
       e.preventDefault();
-      if (this.state.show1 === "arrow-show arrow-float arrow") {
-        this.setState({show1: "arrow-hide arrow-float arrow",
-                       show2: "arrow-show arrow-float arrow"});
+      if (this.state.show1 === "arrow-show arrow-float") {
+        this.setState({show1: "arrow-hide arrow-float",
+                       show2: "arrow-show arrow-float"});
       }
     };
   }
   handleClick2() {
     return (e) => {
       e.preventDefault();
-      if (this.state.show2 === "arrow-show arrow-float arrow") {
-        this.setState({show1: "arrow-show arrow-float arrow",
-                       show2: "arrow-hide arrow-float arrow"});
+      if (this.state.show2 === "arrow-show arrow-float") {
+        this.setState({show1: "arrow-show arrow-float",
+                       show2: "arrow-hide arrow-float"});
       }
     };
   }
@@ -48,10 +48,10 @@ class SidebarCollectionItem extends React.Component {
     return (
       <div className="sidebar-collection-item clearfix">
         <div className="clearfix sidebar-collection-item-header">
-          <div className={this.state.show1} onClick={this.handleClick1()}>
+          <div className={this.state.show1+" arrowD"} onClick={this.handleClick1()}>
             <ArrowDown />
           </div>
-          <div className={this.state.show2} onClick={this.handleClick2()}>
+          <div className={this.state.show2+" arrowR"} onClick={this.handleClick2()}>
             <ArrowRight />
           </div>
           <div className="sidebar-collection-item-name"

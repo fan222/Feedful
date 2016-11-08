@@ -94,3 +94,10 @@
 .sidebar-collection-item {
   margin-bottom: 10px;
 }
+
+.arrowR:hover {
+  color: black;
+}
+.arrowD {
+  color: black;
+}

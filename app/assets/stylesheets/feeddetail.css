@@ -70,6 +70,10 @@
   margin-top: 4px;
 }
 
+.article-block {
+  width: 610px;
+}
+
 .article-block:hover {
   cursor: pointer;
 }
