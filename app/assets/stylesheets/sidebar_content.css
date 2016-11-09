@@ -1,4 +1,4 @@
-.explore-button {
+.explore-button, .feedsnow-button {
   margin-left: 37px;
   border: 0;
   outline: none;
@@ -14,8 +14,16 @@
   transition: all 0.3s ease;
   -webkit-appearance: none;
 }
-.explore-button:hover, .explore-button:focus {
+.explore-button:hover, .feedsnow-button:hover {
   background: black;
+}
+
+.explore-button {
+  margin-top: 10px;
+}
+
+.feedsnow-button {
+  padding: 15px 35px;
 }
 
 .sidebar-content-buttons {

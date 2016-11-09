@@ -21,8 +21,12 @@ class Sidebar extends React.Component {
       sideBarButton = <LoginModal />;
       return sideBarButton;
     } else {
-      sideBarButton = (<button className='explore-button'
-                        onClick={this.handleExp()}>Explore</button>);
+      sideBarButton = ( <div>
+                          <button className='feedsnow-button'
+                            onClick={this.handleNow()}>Now</button>
+                          <button className='explore-button'
+                            onClick={this.handleExp()}>Explore</button>
+                        </div>);
       return sideBarButton;
     }
   }
@@ -31,6 +35,13 @@ class Sidebar extends React.Component {
     return (e) => {
       e.preventDefault();
       this.props.router.push(`/home/categories/2`);
+    };
+  }
+
+  handleNow() {
+    return (e) => {
+      e.preventDefault();
+      this.props.router.push(`/home`);
     };
   }
 
