@@ -79,7 +79,7 @@
   -webkit-appearance: none;
 }
 
-.login-signup:hover, .login-signup:focus {
+.login-signup:hover {
   background: black;
 }
 .logout-button:hover, .logout-button:focus {
