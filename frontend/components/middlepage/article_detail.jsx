@@ -25,6 +25,17 @@ class ArticleDetail extends React.Component {
     return result;
   }
 
+  dangerHtml(article) {
+    let text;
+    if (article.summary === "none") {
+      text = article.content;
+    } else {
+      text = article.summary;
+    }
+    return ({__html: text});
+  }
+
+
   render() {
     return(
       <div className="article-detail">
@@ -34,8 +45,9 @@ class ArticleDetail extends React.Component {
             <div className="article-detail-author">By {this.props.article.author}</div>
             <div className="article-detail-published">{this.props.article.published.slice(0,10)}</div>
           </div>
-          <img className="article-detail-image" src={this.props.article.image} alt={this.props.article.title}></img>
-          <p className="article-detail-content">{this.parseSummary(this.props.article)}</p>
+          <div className="article-detail-content">
+            <div dangerouslySetInnerHTML={this.dangerHtml(this.props.article)}/>
+          </div>
           <a target="_blank" href={this.props.article.url} className="article-detail-url">VISIT WEBSITE</a>
         </div>
       </div>
