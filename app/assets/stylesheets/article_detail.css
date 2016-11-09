@@ -9,9 +9,28 @@
   margin: 100px;
 }
 
-img {
+.article-detail-content img {
   max-width: 647px;
 }
+
+.article-detail-content a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #CCC;
+}
+
+.article-detail-content a:hover {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #666;
+}
+
+.article-detail-content a:visited {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #CCC;
+}
+
 
 .article-detail-title {
   font-size: 2rem;
