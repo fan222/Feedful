@@ -49,6 +49,7 @@ const Root = ({ store }) => {
         <Route path="/" component={App} >
           <IndexRoute component={SplashContainer} onEnter={_redirectIfLoggedIn}/>
           <Route path="home" component={MiddlePageContainer} onEnter={_ensureLoggedIn}>
+            <IndexRoute component={FeedsNowContainer} />
             <Route path="categories/:catId" component={CategoriesItemContainer} />
             <Route path="feeds/:feedId" component={FeedDetailContainer} />
             <Route path="collections/:colId" component={CollectionIndexContainer} />

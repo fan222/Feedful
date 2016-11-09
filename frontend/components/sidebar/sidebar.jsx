@@ -30,7 +30,7 @@ class Sidebar extends React.Component {
   handleExp() {
     return (e) => {
       e.preventDefault();
-      this.props.router.push(`/home/categories/1`);
+      this.props.router.push(`/home/categories/2`);
     };
   }
 
