@@ -9,7 +9,8 @@ import MiddlePageContainer from './middlepage/middlepage_container';
 import CategoriesItemContainer from './middlepage/categories_item_container';
 import SplashContainer from './splash/splash_container';
 import FeedDetailContainer from './middlepage/feeddetail_container';
-import CollectionIndexContainer from './collection_index/collection_index_container';
+import CollectionIndexContainer from
+        './collection_index/collection_index_container';
 import FeedsNowContainer from './feeds_now/feeds_now_container';
 
 import { fetchAllCollections } from '../actions/collections_actions';
@@ -23,14 +24,14 @@ const Root = ({ store }) => {
     if (!currentUser) {
       replace('/');
     } else {
-      if (Object.keys(store.getState().feeds).length === 1) {
-        store.dispatch(fetchAllFeeds());
-      }
       if (Object.keys(store.getState().collections).length === 1) {
         store.dispatch(fetchAllCollections());
       }
       if (Object.keys(store.getState().categories).length === 1) {
         store.dispatch(fetchAllCategories());
+      }
+      if (Object.keys(store.getState().feeds).length === 1) {
+        store.dispatch(fetchAllFeeds());
       }
     }
   };

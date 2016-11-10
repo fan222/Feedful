@@ -1,0 +1,81 @@
+.feedblock-li {
+  margin-right: 34px;
+  width: 240px;
+  float: left;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 51px;
+  height: 369px;
+  padding-bottom: 0px;
+  border: 1px solid #D8D8D8;
+  background-color: #FFF;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.feedblock-img {
+  width: 240px;
+  height: 133px;
+}
+
+
+.feedblock-li .feedblock-title {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: -0.04em;
+  line-height: 30px;
+  max-height: 30px;
+  overflow: hidden;
+  text-transform: capitalize;
+  padding-top: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.feedblock-des {
+  font-size: 13px;
+  overflow: hidden;
+  height: 51px;
+  line-height: 17px;
+  clear: both;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.feedblock-title {
+  float: left;
+}
+
+.feedblock-plus {
+  float: right;
+  margin: 25px 20px;
+  font-size: 27px;
+  color: #179b77;
+}
+
+.feedblock-plus:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.feedblock-detail {
+  margin: 25px 0;
+  padding: 7px 78px;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+.feedblock-detail:hover {
+  cursor: pointer;
+  background-color: #dddddd;
+}
+
+.feedblock-added {  
+  margin-top: 6px;
+  font-size: 13px;
+  padding: 2px 5px;
+  border: 1px solid;
+  border-radius: 6px;
+}
