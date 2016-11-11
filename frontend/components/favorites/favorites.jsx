@@ -43,7 +43,7 @@ class Favorites extends React.Component {
                     <div className="favorites-li-published">{this.props.articles[articleId].published.slice(0,10)}</div>
                   </div>
                   <img className="favorites-li-image" src={this.props.articles[articleId].image}></img>
-                  <a className="favorites-li-url" href={this.props.articles[articleId].url}>Visit Website</a>
+                  <a className="favorites-li-url" target="_blank" href={this.props.articles[articleId].url}>Visit Website</a>
                 </li>
                 )
               }
