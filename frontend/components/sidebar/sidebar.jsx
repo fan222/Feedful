@@ -26,6 +26,8 @@ class Sidebar extends React.Component {
                             onClick={this.handleNow()}>Now</button>
                           <button className='explore-button'
                             onClick={this.handleExp()}>Explore</button>
+                          <button className='favorites-button'
+                            onClick={this.handleFav()}>Favorites</button>
                         </div>);
       return sideBarButton;
     }
@@ -42,6 +44,13 @@ class Sidebar extends React.Component {
     return (e) => {
       e.preventDefault();
       this.props.router.push(`/home`);
+    };
+  }
+
+  handleFav() {
+    return (e) => {
+      e.preventDefault();
+      this.props.router.push(`/home/favorites`);
     };
   }
 

@@ -31,17 +31,17 @@ class Favorites extends React.Component {
         <div className="favorites">
           <div className="favorites-title">Favorite Articles</div>
           <div className="favorites-main">
-            <ul className="favorites-ul">
+            <ul className="favorites-ul clearfix">
               {Object.keys(this.props.articles).map( articleId =>
                 <li className="favorites-li" key={articleId}>
                   <div className="clearfix">
+                    <div className="favorites-li-delete" onClick={this.handleClick(articleId)}>Unlike<Clear /></div>
                     <div className="favorites-li-title">{this.props.articles[articleId].title}</div>
-                    <div className="favorites-li-delete" onClick={this.handleClick(articleId)}>
-                      <Clear />
-                    </div>
                   </div>
-                  <div className="favorites-li-author">{this.props.articles[articleId].author}</div>
-                  <div className="favorites-li-published">{this.props.articles[articleId].published.slice(0,10)}</div>
+                  <div className="clearfix">
+                    <div className="favorites-li-author">{this.props.articles[articleId].author}</div>
+                    <div className="favorites-li-published">{this.props.articles[articleId].published.slice(0,10)}</div>
+                  </div>
                   <img className="favorites-li-image" src={this.props.articles[articleId].image}></img>
                   <a className="favorites-li-url" href={this.props.articles[articleId].url}>Visit Website</a>
                 </li>
