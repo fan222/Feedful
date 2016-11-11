@@ -25,6 +25,7 @@ const customStyles = {
 class FeedsNow extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {modalOpen: false, article: {}};
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
@@ -84,7 +85,10 @@ class FeedsNow extends React.Component {
                 onRequestClose={this.closeModal}
                 onAfterOpen={this.onModalOpen}
                 style={customStyles} >
-                <ArticleDetail article={this.state.article}/>
+                <ArticleDetail  article={this.state.article}
+                                articles={this.props.articles}
+                                createArticle={this.props.createArticle}
+                                deleteArticle={this.props.deleteArticle}/>
               </Modal>
             </div>
         </div>

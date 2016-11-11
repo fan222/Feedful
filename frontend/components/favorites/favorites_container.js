@@ -3,8 +3,9 @@ import Favorites from './favorites';
 import {createArticle, deleteArticle}
         from '../../actions/articles_actions';
 
-const mapStateToProps = ({articles}) => ({
-  articles: articles
+const mapStateToProps = ({articles, feeds}) => ({
+  articles: articles,
+  feeds: feeds
 });
 
 const mapDispatchToProps = dispatch => ({

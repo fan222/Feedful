@@ -103,7 +103,10 @@ class CollectionIndex extends React.Component {
               onRequestClose={this.closeModal}
               onAfterOpen={this.onModalOpen}
               style={customStyles} >
-              <ArticleDetail article={this.state.article}/>
+              <ArticleDetail  article={this.state.article}
+                              articles={this.props.articles}
+                              createArticle={this.props.createArticle}
+                              deleteArticle={this.props.deleteArticle}/>
             </Modal>
           </div>
         </div>
