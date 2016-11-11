@@ -9,6 +9,8 @@ It uses Ruby on Rails for backend, and React.js with Flux framework for front-en
 
 ## Features
 
+new
+
 
 
 
