@@ -12,7 +12,15 @@ class SidebarAddfeed extends React.Component {
   render() {
     return (
       <aside className='sidebar-addfeed'>
-        <div>te  sint occaec</div>
+        <div>{this.props.feed.name}</div>
+        <ul>
+            {Object.keys(this.props.collections).map(colId => (
+              <li key={colId}>
+                {this.props.collections[colId].name}
+              </li>
+            )
+          )}
+        </ul>
       </aside>
     );
   }

@@ -4,7 +4,8 @@ import Modal from 'react-modal';
 
 import Root from './components/root';
 import configureStore from './store/store';
-import { fetchFeed } from './util/feeds_api_util';
+import {createCollection,updateCollection,deleteCollection}
+        from './actions/collections_actions';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -21,5 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(<Root store={store}/>, root);
 
   window.store = store;
-  window.fetchFeed = fetchFeed;
+  window.createCollection = createCollection;
+  window.updateCollection = updateCollection;
+  window.deleteCollection = deleteCollection;
 });
