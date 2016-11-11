@@ -1,0 +1,20 @@
+.sidebar-addfeed-collection-name {
+  float: left;
+}
+
+.sidebar-addfeed-collection-button {
+  float: right;
+  color: #179b77;
+}
+
+.sidebar-addfeed-collection {
+  width: 251px;
+}
+
+.sidebar-addfeed-collection:hover {
+  background-color: #dddddd;
+}
+
+.sidebar-addfeed-ul {
+  padding-left: 0;
+}

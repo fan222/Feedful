@@ -29,7 +29,7 @@ class SidebarAddfeedCollection extends React.Component {
 
   render() {
     return (
-      <div className='sidebar-addfeed-collection' onClick={this.handleClick()}>
+      <div className='sidebar-addfeed-collection clearfix' onClick={this.handleClick()}>
         <div className="sidebar-addfeed-collection-name">{this.props.collection.name}</div>
         <div className="sidebar-addfeed-collection-button">
           {this.button()}

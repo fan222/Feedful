@@ -15,7 +15,7 @@ class SidebarAddfeed extends React.Component {
         <div>{this.props.feed.name}</div>
         <SidebarAddfeedNewCollection
           createCollection={this.props.createCollection}/>
-        <ul>
+        <ul className="sidebar-addfeed-ul">
             {Object.keys(this.props.collections).map(colId => (
               <li key={colId}>
                 <SidebarAddfeedCollection feed={this.props.feed}
