@@ -56,7 +56,6 @@ class Api::CollectionsController < ApplicationController
   end
 
   def destroy
-    debugger
     if current_user
       @collection = Collection.find_by(id: params[:id])
       if @collection

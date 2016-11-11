@@ -15,7 +15,7 @@ class SidebarAddfeedNewCollection extends React.Component {
     };
   }
 
-  handleSubmit() {
+  handleSubmit(event) {
     event.preventDefault();
     this.props.createCollection(this.state);
     this.setState({name: ""});
