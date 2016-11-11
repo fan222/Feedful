@@ -17,6 +17,7 @@ import EditContainer from './edit/edit_container';
 import { fetchAllCollections } from '../actions/collections_actions';
 import { fetchAllCategories } from '../actions/categories_actions';
 import { fetchAllFeeds } from '../actions/feeds_actions';
+import { fetchAllArticles } from '../actions/articles_actions';
 
 const Root = ({ store }) => {
 
@@ -33,6 +34,9 @@ const Root = ({ store }) => {
       }
       if (Object.keys(store.getState().feeds).length === 1) {
         store.dispatch(fetchAllFeeds());
+      }
+      if (Object.keys(store.getState().articles).length === 1) {
+        store.dispatch((fetchAllArticles()));
       }
     }
   };

@@ -44,10 +44,10 @@ CollectionFeed.create!([
 
 
 Article.create!([
-  {title: "Mac yeah1", feed_id: 1, url: "mac_url1"},
-  {title: "Mac yeah2", feed_id: 1, url: "mac_url2"},
-  {title: "code1", feed_id: 2, url: "code_url1"},
-  {title: "code2", feed_id: 2, url: "code_url2"},
-  {title: "code3", feed_id: 3, url: "code_url3"},
-  {title: "code4", feed_id: 3, url: "code_url4"}
+  {title: "Mac yeah1", feed_id: 1, url: "mac_url1", user_id: 1},
+  {title: "Mac yeah2", feed_id: 1, url: "mac_url2", user_id: 1},
+  {title: "code1", feed_id: 2, url: "code_url1", user_id: 1},
+  {title: "code2", feed_id: 2, url: "code_url2", user_id: 1},
+  {title: "code3", feed_id: 3, url: "code_url3", user_id: 1},
+  {title: "code4", feed_id: 3, url: "code_url4", user_id: 1}
   ])

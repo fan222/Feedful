@@ -17,6 +17,7 @@ class MiddlePage extends React.Component {
   componentWillUpdate(){
     if (this.props.loggedIn){
       this.props.fetchAllCollections();
+      this.props.fetchAllArticles();
     }
   }
 

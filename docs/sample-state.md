@@ -45,8 +45,19 @@
     }
   },
   article: {
-    id: 1,
-    feed_id: 1
+    1: {
+      id: 1,
+      title: "article1",
+      user_id: 1,
+      feed_id: 1,
+      author: "name1",
+      url: "url1",
+      entry_id: "123",
+      published: "2011",
+      image: "image1",
+      summary: "summary1",
+      content: "content"
+    }
   }
 }
 ```

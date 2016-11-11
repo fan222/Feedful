@@ -13,5 +13,4 @@ class Category < ApplicationRecord
 
   has_many :category_feeds, dependent: :destroy
   has_many :feeds, through: :category_feeds, source: :feed
-  has_many :articles, through: :feeds, source: :articles
 end

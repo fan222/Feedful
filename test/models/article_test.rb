@@ -4,6 +4,7 @@
 #
 #  id         :integer          not null, primary key
 #  title      :string           not null
+#  user_id    :integer          not null
 #  author     :string
 #  feed_id    :integer          not null
 #  url        :string           not null

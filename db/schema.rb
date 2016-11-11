@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20161101211921) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title",      null: false
+    t.integer  "user_id",    null: false
     t.string   "author"
     t.integer  "feed_id",    null: false
     t.string   "url",        null: false

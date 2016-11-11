@@ -23,7 +23,7 @@ class User < ActiveRecord::Base
 
 	has_many :collections
 	has_many :feeds, through: :collections, source: :feeds
-	has_many :articles, through: :feeds, source: :articles
+	has_many :articles
 
 
 	def password= password

@@ -4,8 +4,8 @@ import Modal from 'react-modal';
 
 import Root from './components/root';
 import configureStore from './store/store';
-import {createCollection,updateCollection,deleteCollection}
-        from './actions/collections_actions';
+import {  fetchAllArticles,  createArticle,
+          deleteArticle} from './actions/articles_actions';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(<Root store={store}/>, root);
 
   window.store = store;
-  window.createCollection = createCollection;
-  window.updateCollection = updateCollection;
-  window.deleteCollection = deleteCollection;
+  window.fetchAllArticles = fetchAllArticles;
+  window.createArticle = createArticle;
+  window.deleteArticle = deleteArticle;
 });

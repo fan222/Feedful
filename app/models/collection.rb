@@ -16,5 +16,4 @@ class Collection < ApplicationRecord
 
   has_many :collection_feeds, dependent: :destroy
   has_many :feeds, through: :collection_feeds, source: :feed
-  has_many :articles, through: :feeds, source: :articles
 end
