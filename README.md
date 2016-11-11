@@ -1,24 +1,14 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Feedful
 
-Things you may want to cover:
+[Feedful] [heroku]
 
-* Ruby version
 
-* System dependencies
+Feedful is a full-stack web application inspired be [Feedly] [feedlysite].
 
-* Configuration
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[heroku]: http://www.feedful.co/
+[feedlysite]: https://feedly.com/i/welcome
