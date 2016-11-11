@@ -50,6 +50,7 @@
 }
 .sidebar-collection-cog:hover {
   color: #000000;
+  cursor: pointer;
 }
 
 .cog-title {

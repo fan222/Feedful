@@ -10,6 +10,13 @@ class SidebarCollection extends React.Component {
   }
 
 
+  handleClick() {
+    return (e) => {
+      e.preventDefault();
+      this.props.router.push(`/home/edit`);
+    };
+  }
+
   collections() {
     if (Object.keys(this.props.feeds).length === 1) {
       return  <div className="sk-cube-grid">
@@ -43,7 +50,7 @@ class SidebarCollection extends React.Component {
       <div className="sidebar-collection">
         <div className="clearfix cog-title">
           <div className="sidebar-collection-title">My Feeds</div>
-          <div className="sidebar-collection-cog">
+          <div className="sidebar-collection-cog" onClick={this.handleClick()}>
             <Cog />
           </div>
         </div>

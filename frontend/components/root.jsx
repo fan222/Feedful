@@ -12,6 +12,7 @@ import FeedDetailContainer from './middlepage/feeddetail_container';
 import CollectionIndexContainer from
         './collection_index/collection_index_container';
 import FeedsNowContainer from './feeds_now/feeds_now_container';
+import EditContainer from './edit/edit_container';
 
 import { fetchAllCollections } from '../actions/collections_actions';
 import { fetchAllCategories } from '../actions/categories_actions';
@@ -54,6 +55,7 @@ const Root = ({ store }) => {
             <Route path="categories/:catId" component={CategoriesItemContainer} />
             <Route path="feeds/:feedId" component={FeedDetailContainer} />
             <Route path="collections/:colId" component={CollectionIndexContainer} />
+            <Route path="edit" component={EditContainer} />
           </Route>
         </Route>
       </Router>
