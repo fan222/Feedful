@@ -12,6 +12,7 @@ It uses Ruby on Rails for backend, and React.js with Flux framework for front-en
 ### Collection
 User can create and manage their collection.
 ![collection] [collection_shot]
+![new_col] [new_collection]
 
 ### Favorites
 User can like and unlike articles so that they can come back easily.
@@ -53,3 +54,4 @@ Since the content of fetched articles are strings, Feedful uses dangerouslySetIn
 [favorites_article]: ./docs/wireframes/screen_shot/favorites_article.png
 [rss_feeds]: ./docs/wireframes/screen_shot/rss_feeds.png
 [article_shot]: ./docs/wireframes/screen_shot/articles.png
+[new_collection]: ./docs/wireframes/screen_shot/new_collection.png
