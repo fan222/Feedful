@@ -44,10 +44,9 @@ CollectionFeed.create!([
 
 
 Article.create!([
-  {title: "Mac yeah1", feed_id: 1, url: "mac_url1", user_id: 1},
-  {title: "Mac yeah2", feed_id: 1, url: "mac_url2", user_id: 1},
-  {title: "code1", feed_id: 2, url: "code_url1", user_id: 1},
-  {title: "code2", feed_id: 2, url: "code_url2", user_id: 1},
-  {title: "code3", feed_id: 3, url: "code_url3", user_id: 1},
-  {title: "code4", feed_id: 3, url: "code_url4", user_id: 1}
+  { title: "AT&T's Optional 'Stream Saver' Feature Will Throttle Streaming Video Starting in 2017", feed_id: 1, url: "http://www.macrumors.com/2016/11/11/att-stream-saver-video-throttling-option/",
+    user_id: 1, author: "Juli Clover", entry_id: "http://www.macrumors.com/2016/11/11/att-stream-saver-video-throttling-option/",
+  image: "http://cdn.macrumors.com/article-new/2015/10/page_att.jpg", published: "2016-11-11T18:39:17.000Z"
+  },
+  {user_id: 1, author: "Lauren Goode", entry_id: "http://www.theverge.com/a/verge-2021/google-x-astro-teller-interview-drones-innovation", feed_id: 3, image: "https://cdn0.vox-cdn.com/thumbor/qvC2OqAZWNK6P9EeedekKZ4O_ZY=/0x0:2039x1359/1310x873/cdn0.vox-cdn.com/uploads/chorus_image/image/51724489/vrg_1228_teller_lede_fin.0.0.jpg", published: "2016-11-08T14:06:22.000Z", title: "Delivery drones will mean the end of ownership", url: "http://www.theverge.com/a/verge-2021/google-x-astro-teller-interview-drones-innovation"}
   ])

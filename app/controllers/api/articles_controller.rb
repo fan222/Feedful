@@ -34,6 +34,6 @@ class Api::ArticlesController < ApplicationController
   def article_params
     params.require(:article).permit(:title, :author, :feed_id,
                                     :url, :entry_id, :published,
-                                    :image, :summary, :content)
+                                    :image)
   end
 end

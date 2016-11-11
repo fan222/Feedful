@@ -12,8 +12,6 @@ else
       json.entry_id article.entry_id
       json.published article.published
       json.image article.image
-      json.summary article.summary
-      json.content article.content
     end
   end
 end

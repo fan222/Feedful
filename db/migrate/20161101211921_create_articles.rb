@@ -9,8 +9,6 @@ class CreateArticles < ActiveRecord::Migration[5.0]
       t.string :entry_id
       t.string :published
       t.string :image
-      t.text :summary
-      t.text :content
       t.timestamps
     end
 
