@@ -11,20 +11,20 @@ It uses Ruby on Rails for backend, and React.js with Flux framework for front-en
 
 ### Collection
 User can create and manage their collection.
-[collection] [collection_shot]
+![collection] [collection_shot]
 
 ### Favorites
 User can like and unlike articles so that they can come back easily.
-[favoritespage] [favorites_page]
-[favoritesarticle] [favorites_article]
+![favoritespage] [favorites_page]
+![favoritesarticle] [favorites_article]
 
 ### RSS feeds
 Feed url is store in database. And new feeds is fetched and rendered dynamic. User will have the newest content all the time.
-[rss] [rss_feeds]
+![rss] [rss_feeds]
 
 ### Article
 With React-Modal, articles are rendered in a very clean way.
-[article] [article_shot]
+![article] [article_shot]
 
 
 
