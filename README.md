@@ -15,15 +15,30 @@ User can create and manage their collection.
 
 ### Favorites
 User can like and unlike articles so that they can come back easily.
+
+User can manage and read their liked articles.
 ![favoritespage] [favorites_page]
+
+User can like and unlike articles while they read articles.
 ![favoritesarticle] [favorites_article]
 
 ### RSS feeds
-Feed url is store in database. And new feeds is fetched and rendered dynamic. User will have the newest content all the time.
+Feed url is store in database. Feedful uses Feedjira gem to fetch feeds. And new feeds is fetched and rendered dynamic. User will have the newest content all the time.
+
+Feedful uses regex to get the image tag's src of original article.
+```javascript
+    /<img.+src="([^"]+)"/.match(string)[1]
+```
 ![rss] [rss_feeds]
 
 ### Article
 With React-Modal, articles are rendered in a very clean way.
+
+Since the content of fetched articles are strings, Feedful uses dangerouslySetInnerHTML to insert articles. In this way, articles have cleaner structure.
+```javascript
+    <div dangerouslySetInnerHTML={this.dangerHtml(this.props.article)}/>
+```
+
 ![article] [article_shot]
 
 
