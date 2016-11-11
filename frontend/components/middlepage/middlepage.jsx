@@ -1,5 +1,7 @@
 import React from 'react';
 import {withRouter} from 'react-router';
+import Github from 'react-icons/lib/go/mark-github';
+
 
 class MiddlePage extends React.Component {
   constructor(props) {
@@ -22,7 +24,11 @@ class MiddlePage extends React.Component {
   render() {
     return (
       <div className="middlepage">
-        <h2>Welcome home</h2>
+        <div className="clearfix">
+          <a target="_blank" href="https://github.com/fan222/feedful" className="github">
+            <Github />
+          </a>
+        </div>
         {this.props.children}
       </div>
     );

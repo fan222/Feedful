@@ -136,3 +136,11 @@ ul {
   height: 30px;
   background: url('/assets/logo30.png');
 }
+
+
+.github {
+  float: right;
+  margin-top: 31px;
+  margin-right: 37px;
+  font-size: 26px;
+}
