@@ -46,6 +46,7 @@
 
 .sidebar-collection-cog {
   float: left;
+  font-size: 23px;
 }
 .sidebar-collection-cog:hover {
   color: #000000;
