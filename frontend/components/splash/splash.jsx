@@ -28,7 +28,7 @@ class Splash extends React.Component {
                     <div className="splash-login">
                       <LoginModal />
                     </div>
-                    <img src="http://res.cloudinary.com/cloudfan/image/upload/q_50/v1478627532/feedful-screenshot_dzwlv9.png"
+                    <img src="http://res.cloudinary.com/cloudfan/image/upload/v1478902247/Screen_Shot_2_mjt8wk.png"
                       alt="feedful-screenshot"
                       className="feedful-screenshot"></img>
                   </div>
