@@ -25,11 +25,12 @@ class SidebarAddfeedNewCollection extends React.Component {
     return (
       <div className="sidebar-addfeed-newcol">
         <form onSubmit={this.handleSubmit}>
-          <input type="text"
+          <input className="sidebar-addfeed-newcol-input"
+            type="text"
             placeholder="New Collection"
             value={this.state.name}
             onChange={this.changeName()}/>
-          <input type="submit" value="New" />
+          <input className="sidebar-addfeed-newcol-submit" type="submit" value="New"/>
         </form>
       </div>
     );

@@ -1,6 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import Check from 'react-icons/lib/md/check-circle';
+import Border from 'react-icons/lib/md/border-all';
 
 
 class SidebarAddfeedCollection extends React.Component {
@@ -30,6 +31,9 @@ class SidebarAddfeedCollection extends React.Component {
   render() {
     return (
       <div className='sidebar-addfeed-collection clearfix' onClick={this.handleClick()}>
+        <div className="sidebar-addfeed-collection-border">
+          <Border />
+        </div>
         <div className="sidebar-addfeed-collection-name">{this.props.collection.name}</div>
         <div className="sidebar-addfeed-collection-button">
           {this.button()}

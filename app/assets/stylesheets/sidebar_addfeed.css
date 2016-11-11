@@ -5,6 +5,7 @@
 .sidebar-addfeed-collection-button {
   float: right;
   color: #179b77;
+  font-size: 17px;
 }
 
 .sidebar-addfeed-collection {
@@ -17,4 +18,69 @@
 
 .sidebar-addfeed-ul {
   padding-left: 0;
+}
+
+.sidebar-addfeed-collection-name {
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding-left: 10px;
+}
+
+.sidebar-addfeed-collection-border {
+  float: left;
+}
+
+.sidebar-addfeed-collection {
+  padding: 8px;
+}
+.sidebar-addfeed-collection:hover {
+  cursor: pointer;
+}
+
+.sidebar-addfeed-newcol-submit {
+  margin: 0 0 0 8px;
+  min-width: 60px;
+  padding-bottom: 6px;
+  padding-top: 7px;
+  background-color: #2bb24c;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: 1rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.sidebar-addfeed-newcol-submit:hover {
+  background-color: #179b77;
+  cursor: pointer;
+}
+
+.sidebar-addfeed-newcol-input {
+  padding: 8px 12px;
+  margin: 9px 4px;
+  font-size: 12px;
+}
+
+.sidebar-addfeed-title {
+  padding-left: 16px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -.04em;
+  line-height: 1.2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+  text-transform: none;
+}
+
+.sidebar-addfeed-des {
+  width: 251px;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 16px 0 16px 16px;
 }

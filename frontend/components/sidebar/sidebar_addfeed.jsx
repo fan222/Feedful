@@ -12,7 +12,8 @@ class SidebarAddfeed extends React.Component {
   render() {
     return (
       <aside className='sidebar-addfeed'>
-        <div>{this.props.feed.name}</div>
+        <div className="sidebar-addfeed-des">Create or select a collection to follow this site on feedful.</div>
+        <div className="sidebar-addfeed-title">{this.props.feed.name}</div>
         <SidebarAddfeedNewCollection
           createCollection={this.props.createCollection}/>
         <ul className="sidebar-addfeed-ul">
