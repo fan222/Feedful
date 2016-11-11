@@ -101,7 +101,9 @@ class CategoriesItem extends React.Component {
             onRequestClose={this.closeModal}
             onAfterOpen={this.onModalOpen}
             style={customStyles} >
-            <SidebarAddfeed feed={this.state.feed} collections={this.props.collections}/>
+            <SidebarAddfeed feed={this.state.feed} collections={this.props.collections}
+                            createCollection={this.props.createCollection}
+                            updateCollection={this.props.updateCollection}/>
           </Modal>
         </div>
         );
