@@ -5,6 +5,7 @@
 
 .favorites {
   margin-left: 20%;
+  padding-left: 40px;
 }
 
 .favorites-button {
@@ -38,7 +39,7 @@
 }
 
 .favorites-title {
-  margin-left: 280px;
+  padding-top: 26px;
   margin-bottom: 30px;
   display: block;
   font-size: 26px;

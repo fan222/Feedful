@@ -1,13 +1,13 @@
 .feeddetail {
-  margin-left: 200px;
+  margin-left: 20%;
   margin-right: 30px;
   width: 60%;
   float: left;
+  padding-left: 40px;
 }
 
 .feeddetail-main {
   margin-top: 0px;
-  padding-left: 33px;
   padding-top: 0px;
   padding-right: 0px;
   padding-bottom: 102px;
@@ -15,12 +15,11 @@
 }
 
 .feeddetail-ul {
-  padding-right: 33px;
+  padding-left: 0;
 }
 
 .feeddetail-title {
-  margin-left: 33px;
-  padding-left: 40px;
+  padding-top: 26px;
   text-transform: capitalize;
   font-size: 26px;
   line-height: 28px;

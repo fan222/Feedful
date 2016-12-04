@@ -1,3 +1,8 @@
+.edit {
+  margin-left: 20%;
+  padding-left: 40px;
+}
+
 .edit-title {
   color: #333333;
   text-transform: capitalize;
@@ -7,9 +12,8 @@
   letter-spacing: -0.04em;
   font-family: sans-serif;
   text-rendering: optimizeLegibility;
-  padding-top: 29px;
+  padding-top: 26px;
   margin-bottom: 50px;
-  margin-left: 20%;
 }
 
 
@@ -39,7 +43,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 65%;
-  margin-left: 20%;
 }
 
 .edititem-li-feed {
