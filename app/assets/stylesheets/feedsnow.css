@@ -1,5 +1,9 @@
 .feedsnow {
-  margin-left: 233px;
+  margin-left: 20%;
+}
+
+.feedsnow-main {
+  width: 620px;
 }
 
 .feedsnow-title {
