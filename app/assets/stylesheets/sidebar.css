@@ -62,13 +62,17 @@
   margin: 100px 27px;
 }
 
+.sidebar .login-signup {
+  width: 151px;
+}
+
 .login-signup {
   margin-left: -6px;
   border: 0;
   outline: none;
   border-radius: 0;
-  padding: 15px 15px;
-  font-size: 2rem;
+  padding: 15px;
+  font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .1em;

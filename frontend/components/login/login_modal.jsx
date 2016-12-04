@@ -39,7 +39,7 @@ class LoginModal extends React.Component {
   render() {
     return (
       <div className="sidebar-login">
-        <button className='login-signup' onClick={this.openModal}>Start</button>
+        <button className='login-signup' onClick={this.openModal}>Get Started</button>
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
