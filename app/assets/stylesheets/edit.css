@@ -9,7 +9,7 @@
   text-rendering: optimizeLegibility;
   padding-top: 29px;
   margin-bottom: 50px;
-  margin-left: 265px;
+  margin-left: 20%;
 }
 
 
@@ -30,11 +30,16 @@
 .edit-li {
   float: left;
   padding-right: 34px;
+  padding-bottom: 30px;
 }
 
 .edit-ul {
-  width: 893px;
-  margin-left: 230px;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 65%;
+  margin-left: 20%;
 }
 
 .edititem-li-feed {
