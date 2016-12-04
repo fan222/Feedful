@@ -1,8 +1,14 @@
 .categories-item {
-  width: 1150px;
+  width: 70%;
   margin-left: 20%;
 }
 
+
+.feedblock-ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .current-cat {
   margin-left: 50px;
