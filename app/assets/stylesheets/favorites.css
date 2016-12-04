@@ -3,6 +3,10 @@
   font-size: 25px;
 }
 
+.favorites {
+  margin-left: 20%;
+}
+
 .favorites-button {
   margin-top: 10px;
   font-size: 13px;
@@ -26,11 +30,10 @@
 }
 
 .favorites-ul {
-  margin-left: 280px;
   padding-left: 0;
 }
 .favorites-li {
-  width: 851px;
+  width: 85%;
   margin: 30px 0;
 }
 
