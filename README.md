@@ -67,6 +67,13 @@ a edit collection sidebar will appear. User can either create a new collection o
 
 ![collection-sidebar] [new_collection]
 
+Users can also edit their collections by clicking edit button.
+
+![edit] [edit_button]
+
+Then users can delete a collection or a feed in a collection.
+
+![edit_page] [edit_page]
 
 
 
@@ -90,3 +97,5 @@ User can like and unlike articles while they read articles.
 [feedlysite]: https://feedly.com/i/welcome
 [add_collection_button]: ./docs/wireframes/screen_shot/add_collection_button.png
 [new_collection]: ./docs/wireframes/screen_shot/new_collection.png
+[edit_button]: ./docs/wireframes/screen_shot/edit_button.png
+[edit_page]: ./docs/wireframes/screen_shot/edit_page.png
