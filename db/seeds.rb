@@ -2,6 +2,8 @@ user1 = User.create!(username: 'fan', password: 123456)
 
 Feed.create!([
 {name: "MacRumors", website: "http://www.macrumors.com/", url: "http://feeds.macrumors.com/MacRumors-All", description: "Apple, iPhone, iPad, Mac News and Rumors."},
+{name: "AnandTech", website: "http://www.anandtech.com/", url: "http://www.anandtech.com/rss/", description: "This channel features the latest computer hardware related articles."},
+{name: "News Tom's Hardware", website: "http://www.tomshardware.com/", url: "http://www.tomshardware.com/feeds/rss2/all.xml", description: "Tom's Hardware is the Internet's premiere resource for hardware news and reviews."},
 {name: "Bike EXIF", website: "http://www.bikeexif.com/", url: "http://www.bikeexif.com/feed", description: "Bike EXIF is a showcase for the world's most exciting custom motorcycles."},
 {name: "The Verge", website: "http://www.theverge.com/", url: "http://www.theverge.com/rss/group/features/index.xml", description: "Covering the intersection of technology, science, art, and culture."},
 {name: "TechCrunch", website: "https://techcrunch.com/", url: "http://feeds.feedburner.com/TechCrunch/", description: "TechCrunch is a leading technology media property, dedicated to obsessively profiling startups, reviewing new Internet products, and breaking tech news."},
@@ -11,18 +13,28 @@ Feed.create!([
 {name: "ReadWrite", website: "http://readwrite.com/", url: "http://readwrite.com/feed/", description: "Web Apps, Web Technology Trends, Social Networking and Social Media - ReadWrite"},
 {name: "Engadget", website: "https://www.engadget.com/", url: "https://www.engadget.com/rss.xml", description: "Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics."},
 {name: "Mashable", website: "http://mashable.com/", url: "http://feeds.mashable.com/Mashable", description: "Leading source for news, information & resources for the Connected Generation."},
-{name: "Ars Technica", website: "http://arstechnica.com/", url: "http://feeds.arstechnica.com/arstechnica/index/", description: "Serving the Technologist for more than a decade. IT news, reviews, and analysis."}
+{name: "Ars Technica", website: "http://arstechnica.com/", url: "http://feeds.arstechnica.com/arstechnica/index/", description: "Serving the Technologist for more than a decade. IT news, reviews, and analysis."},
+{name: "Motor Trend", website: "http://www.motortrend.com/", url: "http://www.motortrend.com/feed/", description: "The official Motor Trend magazine web site featuring the latest new cars, car reviews and news."},
+{name: "Carscoops", website: "http://www.carscoops.com/", url: "http://www.carscoops.com/feeds/posts/default?alt=rss", description: "An automotive webzine with daily updates on new and future vehicles, motor shows, the tuning industry, classic cars and more."},
+{name: "BMW BLOG", website: "http://www.bmwblog.com/", url: "http://www.bmwblog.com/feed", description: "BMW News, Reviews, Test Drives, Photos And Videos."},
+{name: "Coding Horror", website: "https://blog.codinghorror.com/", url: "http://feeds.feedburner.com/codinghorror", description: "programming and human factors."},
+{name: "Scott Hanselman's Blog", website: "http://www.hanselman.com/blog/", url: "http://feeds.hanselman.com/ScottHanselman", description: "Scott Hanselman on Programming, User Experience, The Zen of Computers and Life in General."},
+{name: "Android Developers Blog", website: "http://android-developers.blogspot.com/", url: "http://android-developers.blogspot.com/feeds/posts/default?alt=rss", description: "An Open Handset Alliance Project."},
+{name: "High Scalability", website: "http://highscalability.com/", url: "http://feeds.feedburner.com/HighScalability", description: "High Scalability"}
 ])
 
 Category.create!([
-  {name: 'Mac'},
+  {name: 'Computer'},
   {name: 'Tech'},
-  {name: 'Car'}
+  {name: 'Car'},
+  {name: 'Programming'}
 ])
 
 
 CategoryFeed.create!([
-  {feed_id: Feed.find_by(name: "MacRumors").id, category_id: Category.find_by(name: "Mac").id},
+  {feed_id: Feed.find_by(name: "MacRumors").id, category_id: Category.find_by(name: "Computer").id},
+  {feed_id: Feed.find_by(name: "AnandTech").id, category_id: Category.find_by(name: "Computer").id},
+  {feed_id: Feed.find_by(name: "News Tom's Hardware").id, category_id: Category.find_by(name: "Computer").id},
   {feed_id: Feed.find_by(name: "Lifehacker").id, category_id: Category.find_by(name: "Tech").id},
   {feed_id: Feed.find_by(name: "Wired").id, category_id: Category.find_by(name: "Tech").id},
   {feed_id: Feed.find_by(name: "Digital Trends").id, category_id: Category.find_by(name: "Tech").id},
@@ -32,7 +44,14 @@ CategoryFeed.create!([
   {feed_id: Feed.find_by(name: "Engadget").id, category_id: Category.find_by(name: "Tech").id},
   {feed_id: Feed.find_by(name: "Mashable").id, category_id: Category.find_by(name: "Tech").id},
   {feed_id: Feed.find_by(name: "Ars Technica").id, category_id: Category.find_by(name: "Tech").id},
-  {feed_id: Feed.find_by(name: "Bike EXIF").id, category_id: Category.find_by(name: "Car").id}
+  {feed_id: Feed.find_by(name: "Bike EXIF").id, category_id: Category.find_by(name: "Car").id},
+  {feed_id: Feed.find_by(name: "Motor Trend").id, category_id: Category.find_by(name: "Car").id},
+  {feed_id: Feed.find_by(name: "Carscoops").id, category_id: Category.find_by(name: "Car").id},
+  {feed_id: Feed.find_by(name: "BMW BLOG").id, category_id: Category.find_by(name: "Car").id},
+  {feed_id: Feed.find_by(name: "Coding Horror").id, category_id: Category.find_by(name: "Programming").id},
+  {feed_id: Feed.find_by(name: "Scott Hanselman's Blog").id, category_id: Category.find_by(name: "Programming").id},
+  {feed_id: Feed.find_by(name: "Android Developers Blog").id, category_id: Category.find_by(name: "Programming").id},
+  {feed_id: Feed.find_by(name: "High Scalability").id, category_id: Category.find_by(name: "Programming").id}
   ])
 
 
