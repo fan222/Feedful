@@ -34,6 +34,9 @@ Feeds urls are store in database. Feedful uses Feedjira gem to fetch feeds. And 
 ```ruby
   /<img.+src="([^"]+)"/.match(string)[1]
 ```
+### Categories
+* Feeds belong to different categories. Users can navigate through categories by clicking categories names
+![tags] [tags]
 
 ### Article
 With React-Modal, articles are rendered in a very clean way. Each time users click on a article block, a article detail will pop up from right.
@@ -92,6 +95,16 @@ Then users can go to their favorite articles page to manage and read those artic
 ![like_page] [favorites]
 
 
+### Future Features
+
+#### Mark as read
+User can mark one or all articles as read.
+
+#### Number of read
+Count the number of read. Based on this, recommend popular articles to users.
+
+#### More customization
+Users can add their their feeds urls and customize the website style.
 
 
 
@@ -107,3 +120,4 @@ Then users can go to their favorite articles page to manage and read those artic
 [like_button]: ./docs/wireframes/screen_shot/like_button.png
 [favorites]: ./docs/wireframes/screen_shot/favorites.png
 [splash]: ./docs/wireframes/screen_shot/splash.gif
+[tags]: ./docs/wireframes/screen_shot/tags.gif
