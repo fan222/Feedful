@@ -106,4 +106,4 @@ Then users can go to their favorite articles page to manage and read those artic
 [edit_page]: ./docs/wireframes/screen_shot/edit_page.png
 [like_button]: ./docs/wireframes/screen_shot/like_button.png
 [favorites]: ./docs/wireframes/screen_shot/favorites.png
-[splash]: ./docs/wireframes/screen_shot/splash.png
+[splash]: ./docs/wireframes/screen_shot/splash.gif
