@@ -59,9 +59,11 @@ With React-Modal, articles are rendered in a very clean way. Each time users cli
 ### Collection
 User can create and manage their collection.
 
-* Each time users click on add collection button,
+* Each time users click on add collection button
+
 ![add-collection] [add_collection_button]
 a edit collection sidebar will appear. User can either create a new collection or add to an existed collection.
+
 ![collection-sidebar] [new_collection]
 
 
@@ -86,4 +88,4 @@ User can like and unlike articles while they read articles.
 [heroku]: http://www.feedful.co/
 [feedlysite]: https://feedly.com/i/welcome
 [add_collection_button]: ./docs/wireframes/screen_shot/add_collection_button.png
-[new_collection]: ./docs/wireframes/screen_shot/new_collection.png =
+[new_collection]: ./docs/wireframes/screen_shot/new_collection.png
