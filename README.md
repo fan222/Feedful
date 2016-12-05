@@ -79,12 +79,15 @@ Then users can delete a collection or a feed in a collection.
 
 
 ### Favorites
-User can like and unlike articles so that they can come back easily.
-
-User can manage and read their liked articles.
-
+* User can like and unlike articles so that they can come back easily.
 
 User can like and unlike articles while they read articles.
+
+![like_button] [like_button]
+
+Then users can go to their favorite articles page to manage and read those articles
+
+![like_page] [favorites]
 
 
 
@@ -99,3 +102,5 @@ User can like and unlike articles while they read articles.
 [new_collection]: ./docs/wireframes/screen_shot/new_collection.png
 [edit_button]: ./docs/wireframes/screen_shot/edit_button.png
 [edit_page]: ./docs/wireframes/screen_shot/edit_page.png
+[like_button]: ./docs/wireframes/screen_shot/like_button.png
+[like_page]: ./docs/wireframes/screen_shot/favorites.png
