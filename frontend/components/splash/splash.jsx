@@ -33,7 +33,7 @@ class Splash extends React.Component {
                       className="feedful-screenshot"></img>
                   </div>
                   <div className="splash-middle">
-                    <div className="splash-middle-head">Read, Matters</div>
+                    <div className="splash-middle-head">Read Your Articles Here</div>
                     <div className="splash-middle-features">
                       <div className="splash-middle-feature-icon">
                         <Feeds />
