@@ -62,6 +62,7 @@ User can create and manage their collection.
 * Each time users click on add collection button
 
 ![add-collection] [add_collection_button]
+
 a edit collection sidebar will appear. User can either create a new collection or add to an existed collection.
 
 ![collection-sidebar] [new_collection]
