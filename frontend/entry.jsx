@@ -4,8 +4,6 @@ import Modal from 'react-modal';
 
 import Root from './components/root';
 import configureStore from './store/store';
-import {  fetchAllArticles,  createArticle,
-          deleteArticle} from './actions/articles_actions';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -22,7 +20,5 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(<Root store={store}/>, root);
 
   window.store = store;
-  window.fetchAllArticles = fetchAllArticles;
-  window.createArticle = createArticle;
-  window.deleteArticle = deleteArticle;
+
 });

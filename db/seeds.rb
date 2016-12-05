@@ -7,7 +7,11 @@ Feed.create!([
 {name: "TechCrunch", website: "https://techcrunch.com/", url: "http://feeds.feedburner.com/TechCrunch/", description: "TechCrunch is a leading technology media property, dedicated to obsessively profiling startups, reviewing new Internet products, and breaking tech news."},
 {name: "Digital Trends", website: "http://www.digitaltrends.com/", url: "http://www.digitaltrends.com/feed/", description: "Digital Trends is your premier source for technology news and unbiased expert product reviews of HDTVs, laptops, smartphones and more."},
 {name: "Wired", website: "https://www.wired.com/", url: "http://www.wired.com/feed/", description: "Get in-depth coverage of current and future trends in technology, and how they are shaping business, entertainment, communications, science, politics, and culture."},
-{name: "Lifehacker", website: "http://lifehacker.com/", url: "http://lifehacker.com/rss", description: "Tips and downloads for getting things done."}
+{name: "Lifehacker", website: "http://lifehacker.com/", url: "http://lifehacker.com/rss", description: "Tips and downloads for getting things done."},
+{name: "ReadWrite", website: "http://readwrite.com/", url: "http://readwrite.com/feed/", description: "Web Apps, Web Technology Trends, Social Networking and Social Media - ReadWrite"},
+{name: "Engadget", website: "https://www.engadget.com/", url: "https://www.engadget.com/rss.xml", description: "Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics."},
+{name: "Mashable", website: "http://mashable.com/", url: "http://feeds.mashable.com/Mashable", description: "Leading source for news, information & resources for the Connected Generation."},
+{name: "Ars Technica", website: "http://arstechnica.com/", url: "http://feeds.arstechnica.com/arstechnica/index/", description: "Serving the Technologist for more than a decade. IT news, reviews, and analysis."}
 ])
 
 Category.create!([
@@ -24,6 +28,10 @@ CategoryFeed.create!([
   {feed_id: Feed.find_by(name: "Digital Trends").id, category_id: Category.find_by(name: "Tech").id},
   {feed_id: Feed.find_by(name: "TechCrunch").id, category_id: Category.find_by(name: "Tech").id},
   {feed_id: Feed.find_by(name: "The Verge").id, category_id: Category.find_by(name: "Tech").id},
+  {feed_id: Feed.find_by(name: "ReadWrite").id, category_id: Category.find_by(name: "Tech").id},
+  {feed_id: Feed.find_by(name: "Engadget").id, category_id: Category.find_by(name: "Tech").id},
+  {feed_id: Feed.find_by(name: "Mashable").id, category_id: Category.find_by(name: "Tech").id},
+  {feed_id: Feed.find_by(name: "Ars Technica").id, category_id: Category.find_by(name: "Tech").id},
   {feed_id: Feed.find_by(name: "Bike EXIF").id, category_id: Category.find_by(name: "Car").id}
   ])
 
