@@ -86,5 +86,4 @@ User can like and unlike articles while they read articles.
 [heroku]: http://www.feedful.co/
 [feedlysite]: https://feedly.com/i/welcome
 [add_collection_button]: ./docs/wireframes/screen_shot/add_collection_button.png
-{: height="355px" width="380px"}
 [new_collection]: ./docs/wireframes/screen_shot/new_collection.png =
