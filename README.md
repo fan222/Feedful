@@ -35,6 +35,7 @@ Feeds urls are store in database. Feedful uses Feedjira gem to fetch feeds. And 
 
 ### Article
 With React-Modal, articles are rendered in a very clean way. Each time users click on a article block, a article detail will pop up from right.
+
 * This is accomplished through React-Modal's customStyles.
 ```javascript
   const customStyles = {
@@ -58,6 +59,13 @@ With React-Modal, articles are rendered in a very clean way. Each time users cli
 ### Collection
 User can create and manage their collection.
 
+* Each time users click on add collection button,
+![add-collection] [add_collection_button]
+a edit collection sidebar will appear. User can either create a new collection or add to an existed collection.
+![collection-sidebar] [new_collection]
+
+
+
 
 
 ### Favorites
@@ -77,9 +85,5 @@ User can like and unlike articles while they read articles.
 
 [heroku]: http://www.feedful.co/
 [feedlysite]: https://feedly.com/i/welcome
-[collection_shot]: ./docs/wireframes/screen_shot/.png
-[favorites_page]: ./docs/wireframes/screen_shot/.png
-[favorites_article]: ./docs/wireframes/screen_shot/.png
-[rss_feeds]: ./docs/wireframes/screen_shot/.png
-[article_shot]: ./docs/wireframes/screen_shot/.png
-[new_collection]: ./docs/wireframes/screen_shot/.png
+[add_collection_button]: ./docs/wireframes/screen_shot/add_collection_button.png
+[new_collection]: ./docs/wireframes/screen_shot/new_collection.png
