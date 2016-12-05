@@ -7,6 +7,8 @@
 Feedful is a full-stack web application inspired be [Feedly] [feedlysite]. Feedful is designed to give user interesting feeds articles both for fun and work.
 It uses Ruby on Rails for backend, and React-Redux for front-end.
 
+![splash] [splash]
+
 ## Features
 
 ### RSS feeds
@@ -103,4 +105,5 @@ Then users can go to their favorite articles page to manage and read those artic
 [edit_button]: ./docs/wireframes/screen_shot/edit_button.png
 [edit_page]: ./docs/wireframes/screen_shot/edit_page.png
 [like_button]: ./docs/wireframes/screen_shot/like_button.png
-[like_page]: ./docs/wireframes/screen_shot/favorites.png
+[favorites]: ./docs/wireframes/screen_shot/favorites.png
+[splash]: ./docs/wireframes/screen_shot/splash.png
