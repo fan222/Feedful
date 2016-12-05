@@ -120,4 +120,4 @@ Users can add their their feeds urls and customize the website style.
 [like_button]: ./docs/wireframes/screen_shot/like_button.png
 [favorites]: ./docs/wireframes/screen_shot/favorites.png
 [splash]: ./docs/wireframes/screen_shot/splash.gif
-[tags]: ./docs/wireframes/screen_shot/tags.gif
+[tags]: ./docs/wireframes/screen_shot/tags.png
