@@ -139,7 +139,7 @@
   transition: all 0.2s ease-in;
   -webkit-appearance: none;
 }
-.sidebar:hover ~ .tbd > .middlepage {
+.sidebar:hover ~ .feedful > .middlepage {
   margin-left: 268px;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -152,7 +152,7 @@
   transition: all 0.2s ease-in;
   -webkit-appearance: none;
 }
-.sidebar:hover ~ .tbd > .splash {
+.sidebar:hover ~ .feedful > .splash {
   margin-left: 268px;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;

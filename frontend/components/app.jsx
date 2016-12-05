@@ -6,7 +6,7 @@ const App = ({ children }) => (
   <div>
     <div>
       <SidebarContainer />
-      <div className="tbd">
+      <div className="feedful">
         {children}
       </div>
     </div>

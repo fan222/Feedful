@@ -57,6 +57,6 @@ and sufficient CSS styling:
 
 **Objective:** Functioning reading page
 
-### Bonus Features (TBD)
+### Bonus Features
 - [ ] Favorite Articles
 - [ ] Search articles
