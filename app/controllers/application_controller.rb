@@ -35,7 +35,7 @@ class ApplicationController < ActionController::Base
       articles = {}
       num = 0
       feed_detail.entries.each_with_index do |article, idx|
-        break if num >=10
+        break if num >=4
         num += 1
         author = article.author ? article.author : "anonymity"
         summary= article.summary ? article.summary : "none"
